@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+
 /*
 =============== 
 Variables
@@ -7,7 +9,11 @@ Variables
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-secondary-2: #395bd7;
+
+  /* Fonts */
+  --font-secondary: 'Rubik', sans-serif;
+
   --clr-primary-3: hsl(205, 72%, 37%);
   --clr-primary-4: hsl(205, 63%, 48%);
   /* primary/main color */
@@ -139,18 +145,47 @@ p {
 Stripe Styles
 ===============
 */
+
+.home-container {
+  margin-top: 7rem;
+  height: 76rem;
+  background-image: url(./images/forest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.nav-container {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 10;
+}
+
 .nav {
-  height: 5rem;
   display: flex;
-  align-items: center;
+  padding-top: 2rem;
   justify-content: center;
   background: transparent;
   position: relative;
-  z-index: 1;
+  height: 15rem;
+  isolation: isolate;
+  /* background: rgb(6,46,194);
+  background-image: linear-gradient(45deg, rgba(6,46,194,1) 0%, rgba(30,194,143,1) 8%, rgba(203,178,113,1) 37%, rgba(30,194,143,1) 83%, rgba(6,46,194,1) 100%);
+   */
+  -webkit-mask-image: url('images/nav.svg');
+  mask-image: url('images/nav.svg');
+  background-image: linear-gradient(45deg, rgba(6,46,194,1) 0%, rgba(30,194,143,1) 8%, rgba(203,178,113,1) 37%, rgba(30,194,143,1) 83%, rgba(6,46,194,1) 100%);
+  
+  
 }
+
+
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
+  position: relative;
+  z-index: -2;
 }
 .nav-header {
   display: flex;
@@ -172,48 +207,45 @@ Stripe Styles
 }
 .nav-links {
   display: none;
+  
 }
 .signin-btn {
   display: none;
 }
-.hero::before {
+.nav::before {
   content: '';
-  position: absolute;
-  width: 100%;
-  height: 65%;
-  top: 0;
-  left: 0;
-  background: url(./images/hero.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
 }
+
 .hero {
   position: relative;
-  min-height: 100vh;
-  margin-top: -7rem;
+  min-height: 60em;
+  
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
 }
 .hero-center {
-  width: 90vw;
+  height: 100%;
+  width: 100%;
+  margin-top: 10rem;
   max-width: var(--max-width);
   display: flex;
   align-items: center;
-  border: 5px solid red;
+  
+  background-color: rgba(0, 0, 0, 0.451);
 }
 
 .hero-info h1 {
   text-transform: none;
   max-width: 500px;
-  margin-bottom: 2rem;
+  margin-bottom: rem;
 }
 .hero-info p {
   max-width: 35em;
   line-height: 1.8;
 }
 .hero-images {
+  
   display: none;
 }
 
@@ -224,10 +256,18 @@ Stripe Styles
 }
 
 .hero-name {
+  color: var(--clr-white);
   position: absolute;
-  top: 10rem;
-  left: -9rem;
+  top: 12.5rem;
+  left: -8.5rem;
+  line-height: 1.25;
   transform: rotate(.75turn);
+}
+
+.highlight{
+  color: var(--clr-secondary-2);
+  text-shadow: 0 0 7px rgba(255, 255, 255, 0.692);
+  font-family: var(--font-secondary);
 }
 
 .hero-text {
@@ -237,19 +277,20 @@ Stripe Styles
 }
 
 
+
+
 /* nav media query */
 @media screen and (min-width: 800px) {
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+    margin-top: -7rem;
   }
   .toggle-btn {
     display: none;
   }
-  .signin-btn {
-    display: inline-block;
-  }
+  
   .nav-links {
     display: block;
     justify-self: center;
@@ -304,7 +345,6 @@ Stripe Styles
   .hero-center {
     grid-template-columns: 2fr 1fr;
     align-items: end;
-    padding-bottom: 12vh;
   }
   .hero-info h1 {
     max-width: 100%;
@@ -319,7 +359,7 @@ Stripe Styles
 }
 @media screen and (min-width: 1600px) {
   .hero-center {
-    padding-bottom: 20vh;
+    
   }
   .forest-img {
     width: 100%;

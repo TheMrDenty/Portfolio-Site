@@ -6,12 +6,16 @@ import Submenu from '../components/Submenu'
 
 function Homepage() {
   return (
-    <>
-        <Navbar />
+    <div className='home-container'>
+       <Navbar />
+      
+       
         <Sidebar />
         <Hero />
         <Submenu />
-    </>
+      
+    </div>
+   
   )
 }
 

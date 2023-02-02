@@ -8,12 +8,12 @@ function Hero() {
     <section className='hero' onMouseOver={closeSubmenu}>
         <div className='hero-center'>
             <article className='hero-info'>
-                <h1 className='hero-name'>Hi, I'm <br/> <h1 className='name'>Jamie</h1></h1>
+                <div className='hero-name'><h1>Hi, I'm </h1><br/> <h1 className='highlight'>Jamie</h1></div>
                 
-                <img src={forestImg} className='forest-img' alt='forest' />
+                {/* <img src={forestImg} className='forest-img' alt='forest' /> */}
                 
                 
-                <p className='hero-text'>Web Developer, <br/>  specializing in react</p>
+                <div className='hero-text'><h1 className='highlight'>Web Developer,</h1> <br/> <h1> specializing in react</h1></div>
                 
                 
             </article>
