@@ -42,7 +42,7 @@ function Navbar() {
 
     const displaySubmenu = (e) => {
         const page = e.target.textContent;
-        console.log(page);
+        /* console.log(page); */
         //               gets positional info of target
         const tempBtn = e.target.getBoundingClientRect();
         const center = (tempBtn.left + tempBtn.right) / 2;

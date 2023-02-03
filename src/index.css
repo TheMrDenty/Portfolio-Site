@@ -9,7 +9,10 @@ Variables
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
-  --clr-secondary-2: #395bd7;
+  --clr-secondary-2: #cbb271;
+
+  --halo-white:0 0 5px rgba(255, 255, 255, 0.622) ;
+  --halo-yellow:0 0 10px #cbb271 ;
 
   /* Fonts */
   --font-secondary: 'Rubik', sans-serif;
@@ -149,6 +152,7 @@ Stripe Styles
 .home-container {
   margin-top: 7rem;
   height: 76rem;
+  max-height: 76rem;
   background-image: url(./images/forest.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,6 +196,16 @@ Stripe Styles
   justify-content: space-between;
   align-items: center;
 }
+
+.nav-header h1 {
+  color: white;
+  text-shadow: var(--halo-yellow);
+  font-family: var(--font-secondary);
+  text-decoration: underline;
+  line-height: 2rem;
+  text-underline-offset: .5rem;
+}
+
 .btn {
   font-size: 1rem;
   padding: 0.25rem 0.75rem;
@@ -231,50 +245,40 @@ Stripe Styles
   max-width: var(--max-width);
   display: flex;
   align-items: center;
-  
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.451);
-}
-
-.hero-info h1 {
-  text-transform: none;
-  max-width: 500px;
-  margin-bottom: rem;
-}
-.hero-info p {
-  max-width: 35em;
-  line-height: 1.8;
-}
-.hero-images {
-  
-  display: none;
 }
 
 .hero-info {
   width: 100%;
-  position: relative;
-  
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem 5rem 0 5rem;
 }
 
-.hero-name {
-  color: var(--clr-white);
-  position: absolute;
-  top: 12.5rem;
-  left: -8.5rem;
-  line-height: 1.25;
-  transform: rotate(.75turn);
+.hero-img {
+  margin-bottom: .5rem;
+  height: 15rem;
+  border-radius: 50%;
+  box-shadow: var(--halo-yellow);
 }
 
-.highlight{
+.highlight {
   color: var(--clr-secondary-2);
-  text-shadow: 0 0 7px rgba(255, 255, 255, 0.692);
+  text-shadow: var(--halo-white);
   font-family: var(--font-secondary);
 }
 
 .hero-text {
-  position: absolute;
-  bottom: -3rem;
-  right: 5rem;
+  padding-top: 1rem;
+  color: rgba(255, 255, 255, 0.844);
 }
+
+
+
+
+
 
 
 
@@ -297,7 +301,7 @@ Stripe Styles
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
-    height: 100%;
+    height: 5rem;
     display: grid;
     align-items: center;
   }
@@ -323,48 +327,42 @@ Stripe Styles
     height: 100%;
   }
   .hero-center {
-    grid-template-columns: 2fr 1fr;
+    
   }
 
   .hero-info h1 {
-    font-size: 3rem;
+    
   }
   .hero-info p {
-    font-size: 1.25rem;
+   
   }
-  .hero-images {
-    display: block;
-    justify-self: center;
+  .hero-img {
+    
   }
   .forest-img {
-    width: 30rem;
+    
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-center {
-    grid-template-columns: 2fr 1fr;
-    align-items: end;
+    
   }
   .hero-info h1 {
-    max-width: 100%;
-    font-size: 5.5rem;
+   
   }
   .hero-images {
-    align-self: end;
+    
   }
   .forest-img {
-    width: 40rem;
+    
   }
 }
 @media screen and (min-width: 1600px) {
   .hero-center {
     
   }
-  .forest-img {
-    width: 100%;
-
-  }
+  
 }
 
 
@@ -436,6 +434,13 @@ Stripe Styles
 }
 
 /* links */
+
+.submenu-container {
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  z-index: 11;
+}
+
 .submenu {
   background: var(--clr-white);
   box-shadow: var(--dark-shadow);
@@ -443,7 +448,7 @@ Stripe Styles
   top: 4rem;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 3;
+  
   display: none;
   padding: 2rem;
   border-radius: var(--radius);
