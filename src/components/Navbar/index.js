@@ -1,8 +1,10 @@
+import './styles.scss';
+
 import React, { useEffect, useState } from 'react'
 /* import logo from '../images/logo.svg' */
 import { FaBars } from 'react-icons/fa'
-import { useGlobalContext } from '../context'
-import sublinks from '../data'
+import { useGlobalContext } from '../../context'
+import sublinks from '../../data.js'
 
 
 
@@ -80,9 +82,7 @@ function Navbar() {
                         )
                     })}
                 </ul>
-                <button className='btn signin-btn'>
-                    Sign In
-                </button>
+                
             </div>
         </nav>
     </div>

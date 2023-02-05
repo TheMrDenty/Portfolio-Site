@@ -1,5 +1,7 @@
+import './styles.scss';
+
 import React, { useState, useRef, useEffect } from 'react';
-import { useGlobalContext } from '../context';
+import { useGlobalContext } from '../../context';
 
 function Submenu() {
 

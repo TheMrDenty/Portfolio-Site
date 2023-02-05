@@ -1,6 +1,8 @@
+import './styles.scss';
+
 import React from 'react'
-import { useGlobalContext } from '../context'
-import headshot from '../images/headshot.jpg';
+import { useGlobalContext } from '../../context'
+import headshot from '../../images/headshot.jpg';
 
 function Hero() {
     const {closeSubmenu} = useGlobalContext();
@@ -15,7 +17,7 @@ function Hero() {
             <article className='hero-info'>
               <img src={headshot} className='hero-img' alt='picture of jamie' />
 
-              <div className='hero-text'>
+              <div className=''>
                 <h1 className='highlight'>Hi, I'm<br />Jamie Taber-Plaisted </h1>
                 <p className='hero-text'>
                   A Junior Web-Developer with a strong understanding of Responsive Web Design & Object Oriented Programing.

@@ -1,0 +1,44 @@
+.hero {
+    position: relative;
+    min-height: 60em;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.hero-center {
+    height: 90%;
+    width: 100%;
+    margin-top: 10rem;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.451);
+    border-radius: 10rem;
+}
+
+.hero-info {
+    width: 100%;
+    height: 100%;
+    
+    text-align: center;
+    justify-content: center;
+    padding: 2rem 5rem 0 5rem;
+}
+
+.hero-img {
+    margin-bottom: .5rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: var(--halo-yellow);
+}
+
+.hero-text {
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.844);
+    background-color: rgba(0, 0, 0, 0.574);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+  
