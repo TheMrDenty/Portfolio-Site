@@ -30,17 +30,21 @@ export const AppProvider = ({children}) => {
         setPage(page);
         setLocation(coordinates)
         setIsSubmenuOpen(true);
+        
     }
 
     const closeSubmenu = () => {
         setIsSubmenuOpen(false);
+        
     }
+
+    // should I move my API's to their own component and import them that way?
 
     /* API */
     /* --CAT FACTS-- */
     //state to hold movie data
     const [catFact, setCatFact] = useState([]);
-
+    /* const [aboutLoad, setAboutLoad] = useState(false); */
     //function to get movies
     const getCatFact = async () => {
         // make fetch request and store response
@@ -51,8 +55,9 @@ export const AppProvider = ({children}) => {
             // parse JSON response into js object
             const data = await response.json();
             // sets Movie state to the selected movie
-            console.log('hey', data[0]);
+            /* console.log('hey', data[0]); */
             setCatFact(data);
+            
         } catch(e){
             console.error(e);
         }
@@ -62,10 +67,38 @@ export const AppProvider = ({children}) => {
         getCatFact();
     }, []);
 
+    /* --JOKES-- */
+    //state to hold movie data
+    const [joke, setJoke] = useState([]);
+    /* const [aboutLoad, setAboutLoad] = useState(false); */
+    //function to get movies
+    const getJoke = async () => {
+        // make fetch request and store response
+        try {
+            const response = await fetch(
+                `https://official-joke-api.appspot.com/jokes/programming/ten`
+            );
+            // parse JSON response into js object
+            const data = await response.json();
+            // sets Movie state to the selected movie
+            console.log('hey', data);
+            setJoke(data);
+            
+        } catch(e){
+            console.error(e);
+        }
+    }
+    
+    useEffect(() => {
+        getJoke();
+    }, []);
+
+
+
     
     return <AppContext.Provider value={{
         isSubmenuOpen, isSidebarOpen, openSubmenu, openSidebar, closeSubmenu, closeSidebar, location, page,
-        getCatFact, catFact,
+        catFact, joke,
     }}>
         {children}
     </AppContext.Provider>

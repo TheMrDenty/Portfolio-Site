@@ -1,16 +1,20 @@
 import './styles.scss'
 import { useGlobalContext } from '../../context';
 import Loader from 'react-loaders';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
 const About = () => {
-    const {catFact} = useGlobalContext();
+    const {catFact, /* setAboutLoad */} = useGlobalContext();
+    
     console.log(catFact)
     
     
-
+    useEffect(() => {
+        const afterFirstLoad = setTimeout(catFact, 1000)
+        /* setAboutLoad(true); */
+    }, [])
     
     
     
@@ -19,10 +23,9 @@ const About = () => {
         <>        
             <div className='about-page'>
                 <div className='cat-fact'>
-                    <h1>{catFact[0].text}</h1>
+                    <h1>{catFact.length && catFact[0].text}</h1>
                 </div>
             </div>
-            
         </>
 
     )
