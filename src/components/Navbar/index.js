@@ -54,7 +54,7 @@ function Navbar() {
     }
 
     const handleSubmenu = (e) => {
-        console.log(e.target.classList.contains('link-btn'));
+        /* console.log(e.target.classList.contains('link-btn')); */
         if(!e.target.classList.contains('link-btn')) {
             closeSubmenu();
         }
