@@ -6,13 +6,14 @@ import { useGlobalContext } from '../../context';
 function Submenu() {
 
     const {isSubmenuOpen, location, page:{page, links}} = useGlobalContext();
+    /* console.log(page); */
     const container = useRef(null);
     const [columns, setColumns] = useState('col-2');
 
     useEffect(() => {
         setColumns('col-2');
         const submenu = container.current;
-        console.log(submenu);
+        /* console.log(submenu); */
         const {center, bottom} = location;
         submenu.style.left = `${center}px`;
         submenu.style.top = `${bottom}px`;
@@ -29,10 +30,12 @@ function Submenu() {
   return (
     <div className="submenu-container">
       <aside className={`${isSubmenuOpen ? 'submenu show' : 'submenu' }`} ref={container}>
-          <h4>{page}</h4>
+          <h4>{page[0]}</h4>
           <div className={`submenu-center ${columns}`}>
               {links.map((link, index) => {
+                  
                   const {label, icon, url} = link;
+                  /* console.log(link) */
                   return (
                       <a key={index} href={url}>{icon}{label}</a>
                   )

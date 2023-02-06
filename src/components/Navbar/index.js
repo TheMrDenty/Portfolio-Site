@@ -5,6 +5,7 @@ import React from 'react'
 import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
 import sublinks from '../../data.js'
+import { Link, NavLink } from 'react-router-dom';
 
 
 
@@ -44,7 +45,7 @@ function Navbar() {
 
     const displaySubmenu = (e) => {
         const page = e.target.textContent;
-        /* console.log(page); */
+        
         //               gets positional info of target
         const tempBtn = e.target.getBoundingClientRect();
         const center = (tempBtn.left + tempBtn.right) / 2;
@@ -53,6 +54,7 @@ function Navbar() {
     }
 
     const handleSubmenu = (e) => {
+        console.log(e.target.classList.contains('link-btn'));
         if(!e.target.classList.contains('link-btn')) {
             closeSubmenu();
         }
@@ -64,21 +66,43 @@ function Navbar() {
             <div className='nav-center'>
                 <div className='nav-header'>
                     {/* <img src={logo} alt='stripe' className='nav-logo' /> */}
-                    <h1 className='highlight'>Jamie T.P.</h1>
+                    <Link className='logo' to='/'>
+                        <h1 className='highlight'>Jamie T.P.</h1>
+                    </Link>
                     <button className='btn toggle-btn' onClick={openSidebar}>
                         <FaBars />
                     </button>
                 </div>
                 <ul className='nav-links'>
+                    
                     {sublinks.map((link, index) => {
+                        /* console.log(sublinks) */
                         const {page} = link;
+                        /* console.log(link) */
+                        
+                        /* page.map((e, index) => {
+                            console.log(e)
+                        }) */
+                        /* console.log(name, url) */
 
                         return (
                             <li key={index}>
-                                <button className='link-btn' onMouseOver={displaySubmenu}>
-                                    {page}
-                                </button>
+                                <NavLink exact='true' to={page[1]}>
+                                    <button className='link-btn' onMouseOver={displaySubmenu}>
+                                        {page[0]}
+                                    </button>
+                                </NavLink>
+                                {/* <li key={index}>
+                                <a href={name.url}>
+                                    <button className='link-btn' onMouseOver={displaySubmenu}>
+                                        {name.page}
+                                    </button>
+                                </a>
+                                </li> */
+                                    
+                                }
                             </li>
+                            
                         )
                     })}
                 </ul>

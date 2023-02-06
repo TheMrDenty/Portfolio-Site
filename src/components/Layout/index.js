@@ -3,22 +3,24 @@ import './styles.scss';
 import React from 'react'
 import Navbar from '../Navbar/index';
 import Sidebar from '../Sidebar/index';
-import Hero from '../Hero/index';
+
 import Submenu from '../Submenu/index';
+import { Outlet } from 'react-router-dom';
 
 
 
 
-function Homepage() {
+function Layout() {
   return (
-    <div className='home-container'>
+    <div >
       <Navbar /> 
       <Sidebar />
-      <Hero />
       <Submenu />
+
+      <Outlet />
     </div>
    
   )
 }
 
-export default Homepage
+export default Layout

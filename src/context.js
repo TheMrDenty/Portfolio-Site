@@ -6,8 +6,8 @@ const AppContext = React.createContext();
 export const AppProvider = ({children}) => {
 
     const [location, setLocation] = useState({});
-    const [page, setPage] = useState({page:'', links:[]});
-
+    const [page, setPage] = useState({page:[''], links:[]});
+   
     /* SIDEBAR */
 
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -25,7 +25,8 @@ export const AppProvider = ({children}) => {
     const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
     const openSubmenu = (text, coordinates) => {
-        const page = sublinks.find((link) => link.page === text);
+        const page = sublinks.find((link) => link.page[0] === text);
+        /* console.log(sublinks.page) */
         setPage(page);
         setLocation(coordinates)
         setIsSubmenuOpen(true);

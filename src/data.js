@@ -1,8 +1,14 @@
 import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+
 const sublinks = [
   {
-    page: 'products',
+    page: [
+      'about', 
+      '/about'
+    ],
     links: [
       { label: 'payment', icon: <FaCreditCard />, url: '/products' },
       { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
@@ -10,7 +16,9 @@ const sublinks = [
     ],
   },
   {
-    page: 'developers',
+    page: [
+      'projects', '/projects',
+    ],
     links: [
       { label: 'plugins', icon: <FaBook />, url: '/products' },
       { label: 'libraries', icon: <FaBook />, url: '/products' },
@@ -19,9 +27,11 @@ const sublinks = [
     ],
   },
   {
-    page: 'company',
+    page: [
+      'contact', '/contact',
+    ],
     links: [
-      { label: 'about', icon: <FaBriefcase />, url: '/products' },
+      { label: 'detailed', icon: <FontAwesomeIcon icon={faUser} />, url: '/contact' },
       { label: 'customers', icon: <FaBriefcase />, url: '/products' },
     ],
   },
