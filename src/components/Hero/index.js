@@ -1,10 +1,23 @@
 import './styles.scss';
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useGlobalContext } from '../../context'
 import headshot from '../../images/headshot.jpg';
+import AnimatedLetters from '../AnimatedLetters';
 
 function Hero() {
+
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const welcomeArray = ['H', 'e', 'l', 'l', 'o,', ' ', "I'", 'm']
+    const nameArray = ['J', 'a', 'm', 'i', 'e', ' ', 'T', 'a', 'b', 'e', 'r', ' ', 'P', 'l', 'a', 'i', 's', 't', 'e', 'd']
+    const contactArray = ['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e', '!']
+
+    useEffect(() => {
+      setTimeout(() => {
+        setLetterClass('text-animate-hover')
+      }, 4000)
+    }, [])
+
     const {closeSubmenu} = useGlobalContext();
 
     const current = new Date();
@@ -15,10 +28,14 @@ function Hero() {
     <section className='hero' onMouseOver={closeSubmenu}>
         <div className='hero-center'>
             <article className='hero-info'>
-              <img src={headshot} className='hero-img' alt='picture of jamie' />
+              <img src={headshot} className='hero-img' alt='jamie' />
 
               <div className=''>
-                <h1 className='highlight'>Hi, I'm<br />Jamie Taber-Plaisted </h1>
+                <h1 className='highlight'>
+                  <AnimatedLetters letterClass={letterClass} strArray={welcomeArray} idx={1} />
+                  <br /> 
+                  <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={9} />
+                </h1>
                 <p className='hero-text'>
                   A Junior Web-Developer with a strong understanding of Responsive Web Design & Object Oriented Programing.
                   I am currently learning as much as possible to continue strengthening my skills for my next role.
@@ -46,7 +63,10 @@ function Hero() {
                   <br />
                   <br />
 
-                  If a hard-working, dedicated, team-oriented developer sounds like a great fit for your team then <a href='#contactMe' className='highlight'>contact me!</a>
+                  If a hard-working, dedicated, team-oriented developer sounds like a great fit for your team then 
+                  <a href='#contactMe' className='highlight contact-me'>
+                    <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={9} />
+                  </a>
 
                 </p>
               </div>

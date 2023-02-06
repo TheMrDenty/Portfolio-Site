@@ -1,6 +1,6 @@
 import './styles.scss';
 
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 /* import logo from '../images/logo.svg' */
 import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
