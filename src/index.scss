@@ -10,6 +10,8 @@ Variables
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
   --clr-secondary-2: #cbb271;
+  --clr-green: rgba(30,194,143,1);
+  --clr-black: #202020;
 
   --halo-white:0 0 5px rgba(255, 255, 255, 0.622) ;
   --halo-yellow:0 0 10px #cbb271 ;
@@ -44,7 +46,7 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
+  
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;

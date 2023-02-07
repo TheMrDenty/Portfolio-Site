@@ -26,7 +26,7 @@ export const AppProvider = ({children}) => {
 
     const openSubmenu = (text, coordinates) => {
         const page = sublinks.find((link) => link.page[0] === text);
-        console.log(page)
+        /* console.log(page) */
         setPage(page);
         setLocation(coordinates)
         setIsSubmenuOpen(true);
@@ -35,7 +35,7 @@ export const AppProvider = ({children}) => {
 
     const closeSubmenu = () => {
         setIsSubmenuOpen(false);
-        console.log('here')
+        /* console.log('here') */
     }
 
     // should I move my API's to their own component and import them that way?
@@ -81,7 +81,7 @@ export const AppProvider = ({children}) => {
             // parse JSON response into js object
             const data = await response.json();
             // sets Movie state to the selected movie
-            console.log('hey', data);
+            /* console.log('hey', data); */
             setJoke(data);
             
         } catch(e){

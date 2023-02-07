@@ -17,7 +17,7 @@ function Submenu() {
         const {center, bottom} = location;
         submenu.style.left = `${center}px`;
         submenu.style.top = `${bottom}px`;
-        console.log(submenu.style.top = `${bottom}px`)
+        /* console.log(submenu.style.top = `${bottom}px`) */
         if(links.length === 3) {
             setColumns('col-3');
           }

@@ -1,9 +1,186 @@
 .about-page {
     margin-top: 7rem;
-    padding-top: 10rem;
-    display: flex;
+    padding-top: 12rem;
+    display: grid;
     width: 100%;
-    height: 30rem;
-    background-color: rgb(83, 158, 133);
+    height: 120rem;
+    background-color: var(--clr-black);
     justify-content: center;
+}
+
+.about {
+    height: 100%;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    color: rgb(236, 236, 236);
+}
+
+.skills-container {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    transform: skewY(5deg);
+    background-color: rgba(203,178,113,1);
+    display: grid;
+    height: 100%;
+    position: relative;
+    isolation: isolate;
+}
+.skills-container::before,
+.skills-container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--clr-black);
+    
+    
+    
+    z-index: -1;
+    -webkit-mask-image: url('../../images/curve.svg');
+    -webkit-mask-size: 3rem 1rem;
+    mask-image: url('../../images/curve.svg');
+    mask-size: 10rem 3rem;
+    
+}
+
+.skills-container::before {
+    top:0;
+    margin-top: -3px;
+    transform: rotate(.5turn);
+}
+
+.skills-container::after {
+    bottom:0;
+    margin-bottom: -3px;
+}
+
+
+.stage-cube-cont {
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 6;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: relative;
+    transform: skewY(-5deg);
+    
+    margin-left: 0;
+    
+    right: 0;
+    overflow: hidden;
+    
+}
+
+.cubespinner {
+    animation-name: spincube;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 12s;
+    transform-style: preserve-3d;
+    transform-origin: 100px 100px 0;
+    margin-left: calc(54% - 100px);
+    position: relative;
+    top:36%;
+
+    div {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid #ccc;
+        background: var(--clr-green);
+        text-align: center;
+        font-size: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 0 20px 0px lightyellow;
+    }
+
+    .face1 {
+        transform: translateZ(100px);
+        color: #dd0031;
+    }
+    .face2 {
+        transform: rotateY(90deg) translateZ(100px);
+        color: #f06529;
+    }
+    .face3 {
+        transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+        color: #28a4d9;
+    }
+    .face4 {
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+        color: #5ed4f4;
+    }
+    .face5 {
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+        color: #efd81d;
+    }
+    .face6 {
+        transform: rotateX(-90deg) translateZ(100px);
+        color: #ec4d28;
+    }
+}
+
+@keyframes spincube {
+    from,
+    to {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    }
+    16% {
+    transform: rotateY(-90deg) rotateZ(90deg);
+    }
+    33% {
+    transform: rotateY(-90deg) rotateX(90deg);
+    }
+    50% {
+    transform: rotateY(-180deg) rotateZ(90deg);
+    }
+    66% {
+    transform: rotateY(-270deg) rotateX(90deg);
+    }
+    83% {
+    transform: rotateX(90deg);
+    }
+}
+
+.highlight-green {
+    color: var(--clr-green);
+    text-shadow: var(--halo-white);
+    font-family: var(--font-secondary);
+}  
+
+.skills {
+    color: var(--clr-black);
+    transform: skewY(-5deg);
+    grid-row-start: 2;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.at-home {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    padding-top: 5rem;
+    display: relative;
+    text-align: center;
+    align-items: center;
+}
+
+.cat-fact {
+    color: white;
 }
