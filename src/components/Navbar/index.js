@@ -48,14 +48,16 @@ function Navbar() {
         
         //               gets positional info of target
         const tempBtn = e.target.getBoundingClientRect();
+        console.log(tempBtn);
         const center = (tempBtn.left + tempBtn.right) / 2;
-        const bottom = tempBtn.bottom - 3;
+        const bottom = tempBtn.bottom - 10;
         openSubmenu(page, { center, bottom });
     }
 
     const handleSubmenu = (e) => {
-        /* console.log(e.target.classList.contains('link-btn')); */
+        console.log(e);
         if(!e.target.classList.contains('link-btn')) {
+            
             closeSubmenu();
         }
     }
@@ -87,7 +89,7 @@ function Navbar() {
 
                         return (
                             <li key={index}>
-                                <NavLink exact='true' to={page[1]}>
+                                <NavLink exact='true'  to={page[1]}>
                                     <button className='link-btn' onMouseOver={displaySubmenu}>
                                         {page[0]}
                                     </button>

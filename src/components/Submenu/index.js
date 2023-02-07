@@ -17,7 +17,7 @@ function Submenu() {
         const {center, bottom} = location;
         submenu.style.left = `${center}px`;
         submenu.style.top = `${bottom}px`;
-
+        console.log(submenu.style.top = `${bottom}px`)
         if(links.length === 3) {
             setColumns('col-3');
           }
@@ -30,7 +30,7 @@ function Submenu() {
   return (
     <div className="submenu-container">
       <aside className={`${isSubmenuOpen ? 'submenu show' : 'submenu' }`} ref={container}>
-          <h4>{page[0]}</h4>
+          
           <div className={`submenu-center ${columns}`}>
               {links.map((link, index) => {
                   
