@@ -2,9 +2,9 @@ import Layout from "./components/Layout/index";
 import './App.scss';
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
+import Contact from "./pages/Contact/index";
+import Projects from "./pages/Projects/index";
+import About from "./pages/About/index";
 
 function App() {
   return (

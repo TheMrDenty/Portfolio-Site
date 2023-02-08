@@ -1,5 +1,5 @@
 /* sidebar */
-.sidebar-wrapper {
+.modal-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -13,12 +13,12 @@
     transform: scale(0);
     background: rgba(0, 0, 0, 0.5);
   }
-  .sidebar-wrapper.show {
+  .modal-wrapper.show {
     visibility: visible;
     z-index: 11;
     transform: scale(1);
   }
-  .sidebar {
+  .modal {
     width: 90vw;
     height: 95vh;
     max-width: var(--fixed-width);
@@ -38,28 +38,28 @@
     right: 1rem;
     cursor: pointer;
   }
-  .sidebar article {
+  .modal article {
     margin-bottom: 2rem;
   }
-  .sidebar-sublinks {
+  .modal-sublinks {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 0.25rem;
   }
-  .sidebar-sublinks a {
+  .modal-sublinks a {
     display: block;
     color: var(--clr-grey-1);
     text-transform: capitalize;
     display: flex;
     align-items: center;
   }
-  .sidebar-sublinks svg {
+  .modal-sublinks svg {
     color: var(--clr-grey-5);
     margin-right: 1rem;
   }
   
   @media screen and (min-width: 900px) {
-    .sidebar-wrapper {
+    .modal-wrapper {
       display: none;
     }
   }

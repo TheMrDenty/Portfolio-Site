@@ -5,6 +5,7 @@ import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
+import Footer from '../../components/Footer/index';
 
 
 
@@ -91,7 +92,12 @@ const About = () => {
                     </div>
                 </div>
                 
+                <div className="footer">
 
+                    <h1>edhfuesfuesd</h1>
+                    <Footer />
+                </div>
+                
             </div>
         </>
 

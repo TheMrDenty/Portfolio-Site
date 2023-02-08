@@ -5,7 +5,7 @@ import GitHubCalendar from 'react-github-calendar';
 const Projects = () => {
     const {joke, /* setAboutLoad */} = useGlobalContext();
     
-    console.log(joke)
+
 
 
     

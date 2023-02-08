@@ -39,7 +39,7 @@ function Navbar() {
         }
    
     }, [loaded]) */
-    const {openSidebar, openSubmenu, closeSubmenu} = useGlobalContext();
+    const {openModal, openSubmenu, closeSubmenu} = useGlobalContext();
 
     
 
@@ -71,7 +71,7 @@ function Navbar() {
                     <Link className='logo' to='/'>
                         <h1 className='highlight'>Jamie T.P.</h1>
                     </Link>
-                    <button className='btn toggle-btn' onClick={openSidebar}>
+                    <button className='btn toggle-btn' onClick={openModal}>
                         <FaBars />
                     </button>
                 </div>

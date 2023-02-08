@@ -10,14 +10,14 @@ export const AppProvider = ({children}) => {
    
     /* SIDEBAR */
 
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
-    const openSidebar = () => {
-        setIsSidebarOpen(true);
+    const openModal = () => {
+        setIsModalOpen(true);
     }
 
-    const closeSidebar = () => {
-        setIsSidebarOpen(false);
+    const closeModal = () => {
+        setIsModalOpen(false);
     }
 
     /* SUBMENU */
@@ -44,7 +44,7 @@ export const AppProvider = ({children}) => {
     /* --CAT FACTS-- */
     //state to hold movie data
     const [catFact, setCatFact] = useState([]);
-    /* const [aboutLoad, setAboutLoad] = useState(false); */
+  
     //function to get movies
     const getCatFact = async () => {
         // make fetch request and store response
@@ -70,7 +70,7 @@ export const AppProvider = ({children}) => {
     /* --JOKES-- */
     //state to hold movie data
     const [joke, setJoke] = useState([]);
-    /* const [aboutLoad, setAboutLoad] = useState(false); */
+    
     //function to get movies
     const getJoke = async () => {
         // make fetch request and store response
@@ -97,7 +97,7 @@ export const AppProvider = ({children}) => {
 
     
     return <AppContext.Provider value={{
-        isSubmenuOpen, isSidebarOpen, openSubmenu, openSidebar, closeSubmenu, closeSidebar, location, page,
+        isSubmenuOpen, isModalOpen, openSubmenu, openModal, closeSubmenu, closeModal, location, page,
         catFact, joke,
     }}>
         {children}

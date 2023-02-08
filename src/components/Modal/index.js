@@ -5,23 +5,23 @@ import { FaTimes } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
 import sublinks from '../../data'
 
-function Sidebar() {
+function Modal() {
 
-    const {isSidebarOpen, closeSidebar} = useGlobalContext();
+    const {isModalOpen, closeModal} = useGlobalContext();
 
   return (
-    <aside className={`${isSidebarOpen ? 'sidebar-wrapper show' : 'sidebar-wrapper'}`}>
-        <div className='sidebar'>
-            <button className='close-btn' onClick={closeSidebar}>
+    <aside className={`${isModalOpen ? 'modal-wrapper show' : 'modal-wrapper'}`}>
+        <div className='modal'>
+            <button className='close-btn' onClick={closeModal}>
                 <FaTimes />
             </button>
-            <div className='sidebar-links'>
+            <div className='modal-links'>
                 {sublinks.map((item, index) => {
                     const {links, page} = item;
                     return (
                         <article key={index}>
                             <h4>{page}</h4>
-                            <div className='sidebar-sublinks'>
+                            <div className='modal-sublinks'>
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
@@ -38,4 +38,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default Modal
