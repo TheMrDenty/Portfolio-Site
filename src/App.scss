@@ -43,4 +43,14 @@ textarea {
   height: 50px;
   animation: fadeOut 1s 1s;
   animation-fill-mode: forwards;
+  z-index: 10;
+  
+}
+
+.loader-active:empty {
+  content: '';
+  background-color: var(--clr-black);
+  height: 100%;
+  width: 100%;
+ 
 }
