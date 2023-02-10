@@ -10,7 +10,7 @@ function Home() {
 
   const [letterClass, setLetterClass] = useState('text-animate')
   const welcomeArray = ['H', 'e', 'l', 'l', 'o,', ' ', "I'", 'm']
-  const nameArray = ['J', 'a', 'm', 'i', 'e', ' ', 'T', 'a', 'b', 'e', 'r', ' ', 'P', 'l', 'a', 'i', 's', 't', 'e', 'd']
+  const nameArray = ['J', 'a', 'm', 'i', 'e', ' ', 'T', 'a', 'b', 'e', 'r', '-', 'P', 'l', 'a', 'i', 's', 't', 'e', 'd']
   const contactArray = ['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e', '!']
 
   useEffect(() => {

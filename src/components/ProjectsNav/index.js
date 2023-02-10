@@ -1,20 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './styles.scss'
 
 function ProjectsNav() {
+  const getMousePosition = () => {
+     document.getElementById("cards").onmousemove = e => {
+      // loops over all of the cards and sets each cards position based on where the mouses position is
+      for(const card of document.getElementsByClassName("card")) {
+        const rect = card.getBoundingClientRect(),
+              x = e.clientX - rect.left,
+              y = e.clientY - rect.top;
 
-
-  document.getElementById("cards").onmousemove = e => {
-    // loops over all of the cards and sets each cards position based on where the mouses position is
-  for(const card of document.getElementsByClassName("card")) {
-    const rect = card.getBoundingClientRect(),
-          x = e.clientX - rect.left,
-          y = e.clientY - rect.top;
-
-    card.style.setProperty("--mouse-x", `${x}px`);
-    card.style.setProperty("--mouse-y", `${y}px`);
-  };
-}
+        card.style.setProperty("--mouse-x", `${x}px`);
+        card.style.setProperty("--mouse-y", `${y}px`);
+      };
+    }
+  }
+  // gets mouse position after initial load
+  useEffect(() => {
+    getMousePosition();
+  }, [])
 
   return (
     <>

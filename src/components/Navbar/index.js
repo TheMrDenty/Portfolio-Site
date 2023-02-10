@@ -88,8 +88,8 @@ function Navbar() {
                         /* console.log(name, url) */
 
                         return (
-                            <li key={index}>
-                                <NavLink exact='true'  to={page[1]}>
+                            <li key={index}  >
+                                <NavLink exact='true' to={page[1]}>
                                     <button className='link-btn' onMouseOver={displaySubmenu}>
                                         {page[0]}
                                     </button>

@@ -54,16 +54,22 @@
     border-color: transparent;
     color: white;
     background: var(--clr-black);
-    cursor: pointer;
+    
     transition: var(--transition);
 }
 
 .btn:hover {
     background: var(--clr-grey-5);
+    
 }
 
 .nav-links {
     display: none;
+}
+
+.link-btn:hover {
+  
+  cursor: pointer;
 }
   
 .nav::before {
