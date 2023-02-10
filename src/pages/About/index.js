@@ -92,11 +92,9 @@ const About = () => {
                     </div>
                 </div>
                 
-                <div className="footer">
-
-                    <h1>edhfuesfuesd</h1>
-                    <Footer />
-                </div>
+                
+                <Footer />
+                
                 
             </div>
         </>

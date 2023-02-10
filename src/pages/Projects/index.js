@@ -1,6 +1,7 @@
 import { useGlobalContext } from '../../context';
 import './styles.scss'
 import GitHubCalendar from 'react-github-calendar';
+import Footer from '../../components/Footer';
 
 const Projects = () => {
     const {joke, /* setAboutLoad */} = useGlobalContext();
@@ -18,6 +19,7 @@ const Projects = () => {
                 </div>
                 <GitHubCalendar username="themrdenty" year='last' showWeekdayLabels />
             </div>
+            <Footer />
         </>
     )
 } 

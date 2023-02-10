@@ -1,16 +1,13 @@
-.container {
+.footer-container {
     
     color: white;
-    grid-row-start: 4;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
+    grid-area: 5 / 1 / 6 / 6;
     
     
     width: 100%;
-    height: 20rem;
-    background-color: red;
     
+    background-color: var(--clr-green);
+    padding-bottom: 20rem;
     text-align: center;
-    margin-top: auto;
+    z-index: 11;
 }

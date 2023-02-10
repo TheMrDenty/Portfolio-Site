@@ -6,6 +6,7 @@ import AnimatedLetters from '../../components/AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import Loader from 'react-loaders';
+import Footer from '../../components/Footer';
 
 const Contact = () => {
 
@@ -92,7 +93,7 @@ const Contact = () => {
                     <br />
                     <span>jamietp113@gmail.com</span>
                 </div>
-                <MapContainer center={[	42.089796,  -76.807734]} zoom={13}>
+                <MapContainer center={[	42.089796,  -76.807734]} zoom={13} className='map'>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Marker position={[	42.089796,  -76.807734]}>
                         <Popup>Jamie lives here</Popup>
@@ -100,9 +101,11 @@ const Contact = () => {
                 </MapContainer>
             </div>
         </div>
-        {}
+        <div className="footer">
+            <Footer />
+        </div>
         <Loader type='pacman' className='loader'/>
-        </>
+    </>
     )
 }
 

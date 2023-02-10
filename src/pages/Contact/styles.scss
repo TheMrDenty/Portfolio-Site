@@ -142,6 +142,19 @@ p {
       
     }
   }
+
+  .footer {
+    color: white;
+    grid-area: 5 / 1 / 6 / 6;
+    
+    position: relative;
+    width: 100%;
+    
+    background-color: var(--clr-green);
+    
+    text-align: center;
+    z-index: 10;
+  }
   
   @media screen and (max-width: 1200px) {
     .map-wrap {
