@@ -15,17 +15,14 @@
     margin-top: 7rem;
     height: 76rem;
     max-height: 100%;
-    background-color: red;
-    z-index: -1;
-    
-}
-
-.bg-img {
     background-image: url(../../images/forest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80rem;
+    z-index: 1;
+    
 }
+
+
 
 .hero {
     position: relative;

@@ -28,7 +28,7 @@ function Home() {
   return (
     <div className='home-page'>
       <div className='content'>
-        <div className="bg-img">
+        
           <section className='hero' onMouseOver={closeSubmenu}>
               <div className='hero-center'>
                   <article className='hero-info'>
@@ -78,7 +78,7 @@ function Home() {
                   
               </div>
           </section>
-        </div>
+        
       </div>
       <Footer />
     </div>
