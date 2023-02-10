@@ -80,7 +80,9 @@ function Home() {
           </section>
         
       </div>
-      <Footer />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   )
 }

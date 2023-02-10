@@ -22,7 +22,7 @@ const Footer = () => {
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
-                                        <a key={index} href={url}>{icon}{label}</a>
+                                        <a key={index} className='link-text' href={url}>{icon}{label}</a>
                                     )
                                 })}
                             </div>
@@ -31,7 +31,7 @@ const Footer = () => {
                 })}
             </div>
 
-            <ul>
+            <ul className='links'>
                 <li>
                     <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/jamie-taber-plaisted-545a4217b/'>
                         <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />

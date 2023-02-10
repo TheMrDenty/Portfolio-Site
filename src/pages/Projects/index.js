@@ -34,7 +34,9 @@ const Projects = () => {
                     <GitHubCalendar username="themrdenty" year='last' showWeekdayLabels />
                 </div>
             </div>
-            <Footer />
+            <div className="footer">
+                <Footer />
+            </div>
         </>
     )
 } 

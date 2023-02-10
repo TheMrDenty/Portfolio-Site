@@ -12,6 +12,7 @@
     transition: var(--transition);
     transform: scale(0);
     background: rgba(0, 0, 0, 0.5);
+    
   }
   .modal-wrapper.show {
     visibility: visible;
@@ -27,6 +28,7 @@
     box-shadow: var(--dark-shadow);
     position: relative;
     padding: 4rem 2rem;
+    
   }
   .close-btn {
     font-size: 2rem;
@@ -40,17 +42,20 @@
   }
   .modal article {
     margin-bottom: 2rem;
+    
+    
   }
   .modal-sublinks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: inline-block;
+    
     row-gap: 0.25rem;
+    padding: 0 0 .5rem;
   }
   .modal-sublinks a {
-    display: block;
+    
     color: var(--clr-grey-1);
     text-transform: capitalize;
-    display: flex;
+    padding: 0 1rem;
     align-items: center;
   }
   .modal-sublinks svg {

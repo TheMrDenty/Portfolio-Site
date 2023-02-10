@@ -16,12 +16,11 @@
     -webkit-mask-image: url('../../images/nav.svg');
     mask-image: url('../../images/nav.svg');
     background-image: linear-gradient(
-        45deg, 
-        rgba(6,46,194,1) 0%,
-        rgba(30,194,143,1) 8%, 
-        rgba(203,178,113,1) 37%, 
-        rgba(30,194,143,1) 83%, 
-        rgba(6,46,194,1) 100%
+        175deg, 
+        
+        rgba(203,178,113,1)0%, 
+        var(--clr-black) 70%, 
+        
     );
 }
 
@@ -67,7 +66,7 @@
     display: none;
 }
 
-.link-btn:hover {
+.class:hover {
   
   cursor: pointer;
 }

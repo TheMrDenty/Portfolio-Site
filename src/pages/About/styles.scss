@@ -3,13 +3,13 @@
     padding-top: 12rem;
     display: grid;
     width: 100%;
-    height: 130rem;
+    height: 100%;
     background-color: var(--clr-black);
     justify-content: center;
 }
 
 .about {
-    height: 100%;
+    height: 20rem;
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
@@ -98,7 +98,7 @@
         width: 200px;
         height: 200px;
         border: 1px solid #ccc;
-        background: var(--clr-green);
+        background: var(--clr-black);
         text-align: center;
         font-size: 100px;
         display: flex;
@@ -156,7 +156,7 @@
 }
 
 .highlight-green {
-    color: var(--clr-green);
+    color: var(--clr-black);
     text-shadow: var(--halo-white);
     font-family: var(--font-secondary);
 }  
@@ -179,6 +179,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     width: 100%;
+    height: 30rem;
     padding-top: 5rem;
     display: relative;
     text-align: center;
@@ -188,4 +189,5 @@
 .cat-fact {
     color: white;
 }
+
 
