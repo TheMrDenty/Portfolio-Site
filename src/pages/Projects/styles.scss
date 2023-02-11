@@ -7,8 +7,42 @@
 
    
     text-align: center;
-
+    align-items: center;
+    position: relative;
 }
+
+.git-calender {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.github {
+    color: var(--clr-secondary-2);
+}
+
+.joke {
+    padding: 5rem 0;
+}
+
+.flat-button {
+    color: var(--clr-secondary-2);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 8px 10px;
+    border: 1px solid var(--clr-secondary-2);
+   
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 10px;
+   
+    cursor: pointer;
+  }
 
 
 

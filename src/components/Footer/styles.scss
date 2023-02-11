@@ -6,7 +6,11 @@
     
     width: 100%;
     
-    background-color: var(--clr-secondary-2);
+    background: linear-gradient(
+        175deg, 
+        var(--clr-black) 0%, 
+        rgba(203,178,113,1)70%, 
+    );
     padding-bottom: 5rem;
     justify-content: center;
     

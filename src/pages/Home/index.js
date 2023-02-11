@@ -5,13 +5,14 @@ import { useGlobalContext } from '../../context'
 import headshot from '../../images/headshot.jpg';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import Footer from '../../components/Footer';
+import { NavLink } from 'react-router-dom';
 
 function Home() {
 
   const [letterClass, setLetterClass] = useState('text-animate')
   const welcomeArray = ['H', 'e', 'l', 'l', 'o,', ' ', "I'", 'm']
   const nameArray = ['J', 'a', 'm', 'i', 'e', ' ', 'T', 'a', 'b', 'e', 'r', '-', 'P', 'l', 'a', 'i', 's', 't', 'e', 'd']
-  const contactArray = ['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e', '!']
+  const contactArray = ['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e!']
 
   useEffect(() => {
     setTimeout(() => {
@@ -68,9 +69,9 @@ function Home() {
                         <br />
 
                         If a hard-working, dedicated, team-oriented developer sounds like a great fit for your team then 
-                        <a href='#contactMe' className='highlight contact-me'>
+                        <NavLink exact='true' to={'/contact'} className='highlight contact-me'>
                           <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={25} />
-                        </a>
+                        </NavLink>
 
                       </p>
                     </div>

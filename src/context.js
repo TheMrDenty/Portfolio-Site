@@ -95,10 +95,15 @@ export const AppProvider = ({children}) => {
 
 
 
+    const getRandomInt = (max) => {
+        return Math.floor(Math.random() * max)
+    }
+
+
     
     return <AppContext.Provider value={{
         isSubmenuOpen, isModalOpen, openSubmenu, openModal, closeSubmenu, closeModal, location, page,
-        catFact, joke,
+        catFact, joke, getRandomInt
     }}>
         {children}
     </AppContext.Provider>
