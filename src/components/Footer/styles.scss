@@ -1,37 +1,116 @@
+
 .footer-container {
+    position: relative;
     
     color: white;
-    grid-area: 5 / 1 / 6 / 6;
+    grid-area: 4 / 1 / 6 / 6;
     
     
     width: 100%;
-    
-    background: linear-gradient(
-        175deg, 
-        var(--clr-black) 0%, 
-        rgba(203,178,113,1)70%, 
-    );
-    padding-bottom: 5rem;
+    height: 100%;
+    /* background-color: var(--clr-black); */
+    padding-bottom: 5rem;   
+   
     justify-content: center;
     
+    isolation: isolate;
+    -webkit-mask-image: url('../../images/nav.svg');
+    mask-image: url('../../images/nav.svg');
+    
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+  
+   
+    
+    background-image: linear-gradient(
+        175deg, 
+        rgba(203,178,113,1)0%, 
+        var(--clr-black) 70%, 
+        
+    );
     
     z-index: 11;
+
+    // grid to order icon links to the left fourth of the page and sublinks to the right 3/4ths
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
+
 h4 {
-    color: var(--clr-black);
+    color: white;
+    text-shadow: var(--halo-yellow);
+    font-family: var(--font-secondary);
+    font-size: 1.2rem;
 }
 
 
 .sublinks {
+    grid-area: 1 / 1 / 2 / 4;
     width: 100%;
-    padding-top: 1rem;
+   
+    padding-top: 2rem;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    // grid to split each sublink into thirds
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.links {
+    grid-area: 1 / 4 / 2 / 5;
+    padding-top: 3rem;
+    -webkit-transform: scaleX(-1) scaleY(-1);
+    transform: scaleX(-1) scaleY(-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .links li{
-    display: inline;
+    display: flex;
     padding: 0 .125rem;
+    
+}
+
+.about-footer {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-top: 1.5rem;
+}
+.projects-footer {
+    grid-area: 1 / 3 / 2 / 4;
+    
+}
+.contact-footer {
+    padding-top: 3rem;
+    grid-area: 1 / 1 / 2 / 2; 
+    
+}   
+
+.modal-sublinks a {
+    display: block;
+    
+    padding-top: .5rem;
+}
+
+.footer svg {
+    color: white;
+    filter: drop-shadow(var(--halo-yellow));
    
+    font-family: var(--font-secondary);
+}
+
+.home-page .footer {
+    position: absolute;
+    margin-top: 73rem;
+    
 }
 
 

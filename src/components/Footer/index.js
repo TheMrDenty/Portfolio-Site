@@ -10,11 +10,12 @@ const Footer = () => {
 
     return (
         <div className="footer-container">
+            
             <div className="sublinks">
                 {sublinks.map((item, index) => {
                     const {links, page} = item;
                     return (
-                        <article key={index}>
+                        <article key={index} className={`${page[0]}-footer`}>
                             <Link to={page[1]} >
                                 <h4>{page[0]}</h4>
                             </Link>
@@ -22,7 +23,7 @@ const Footer = () => {
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
-                                        <a key={index} className='link-text' href={url}>{icon}{label}</a>
+                                        <a key={index} className='link-text' href={url}><p>{icon}{label}</p></a>
                                     )
                                 })}
                             </div>
@@ -34,12 +35,12 @@ const Footer = () => {
             <ul className='links'>
                 <li>
                     <a target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/jamie-taber-plaisted-545a4217b/'>
-                        <FontAwesomeIcon icon={faLinkedin} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faLinkedin}  />
                     </a>
                 </li>
                 <li>
                     <a target='_blank' rel='noreferrer' href='https://github.com/TheMrDenty'>
-                        <FontAwesomeIcon icon={faGithub} color='#4d4d4e' />
+                        <FontAwesomeIcon icon={faGithub} className='FAIcon' />
                     </a>
                 </li>
             </ul>
