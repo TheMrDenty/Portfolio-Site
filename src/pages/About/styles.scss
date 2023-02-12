@@ -9,7 +9,8 @@
 }
 
 .about {
-    height: 20rem;
+    margin: auto 5rem;
+    height: 40rem;
     grid-row-start: 1;
     grid-row-end: 1;
     grid-column-start: 1;
@@ -92,8 +93,10 @@
     margin-left: calc(54% - 100px);
     position: relative;
     top:36%;
+    
 
     div {
+        
         position: absolute;
         width: 200px;
         height: 200px;
@@ -190,4 +193,8 @@
     color: white;
 }
 
-
+// changes svgs to white with yellow halo
+/* svg {
+    color: white;
+    filter: drop-shadow(var(--halo-yellow));
+} */

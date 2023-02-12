@@ -51,9 +51,8 @@ function EmailForm() {
                     />
                 </h1>
                 <p>
-                    I am interested in freelance opportunities - especially on ambitious
-                    or large projects. However, if you have any other requests or
-                    questions, don't hesitate to contact me using below form either.
+                Don't miss this opportunity to connect with a hard-working, dedicated, and team-oriented Junior Web Developer. 
+                Fill out the form below to start the conversation and take the next step in our journey.
                 </p>
                 <div className='contact-form'>
                     <form ref={form} onSubmit={sendEmail}>

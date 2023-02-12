@@ -22,9 +22,7 @@ function Home() {
 
   const {closeSubmenu} = useGlobalContext();
 
-  const current = new Date();
   
-  const learningYears = current.getFullYear() - 2022
   
   return (
     <div className='home-page'>
@@ -42,33 +40,29 @@ function Home() {
                         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={9} />
                       </h1>
                       <p className='hero-text'>
-                        A Junior Web-Developer with a strong understanding of Responsive Web Design & Object Oriented Programing.
-                        I am currently learning as much as possible to continue strengthening my skills for my next role.
-                        My goal as a developer is to bring my ideas to life and have fun while doing so, my focus is currently
-                        on front-end development but in the future I would like to get into game development and machine learning.
-                        I have always had a love for computers and have grown up playing through some of the greatest stories in video-games.
-                        So it only felt natural to change careers to a field that would allow me to work with both and to potentially produce
-                        a great story for others to experience.
+                        As a Junior Web Developer, I possess a comprehensive understanding of Responsive Web Design and Object Oriented Programming. 
+                        I am constantly striving to improve my skills and take on new challenges, with a focus on front-end development. 
+                        However, my ultimate goal is to delve into game development and machine learning,  
+                        as I have a passion for both computer technology and video-games, and aim to bring my creative ideas to life through my work.
 
                         <br />
                         <br />
 
-                        I have always aimed to be the best at what I do and if me telling you isn't enough too convince you, my work history
-                        should be. At 16 I started working as a host at a restaurant and eventually worked my way up to serving where I frequently
-                        was a top 3 performer in multiple sales categories. Then, in my two years as a Real Estate Agent, I handled north of 2 million dollars
-                        in sales. I am on year {learningYears} of learning how to code and have been keeping impressive pace picking up the concepts and 
-                        have built myself a solid foundation to continue growing as a developer.
+                        Throughout my career, I have consistently demonstrated my drive for excellence and determination. My work experience, 
+                        starting from my role as a restaurant host, where I eventually became a top-performing server, to my two years as a Real Estate Agent, 
+                        handling over 2 million dollars in sales, showcases my dedication and ability to succeed. Now, in my first year of learning to code, 
+                        I have made impressive progress and established a solid foundation that will continue to support my growth as a developer.
 
                         <br />
                         <br />
 
-                        Outside of work and learning you will usually catch me either playing a game, binge-watching one of my favorite shows, 
-                        or spending some time with my friends & family. 
+                        When I am not working or learning, I enjoy spending time with my friends and family, playing games, or binge-watching my favorite shows.
                         
                         <br />
                         <br />
 
-                        If a hard-working, dedicated, team-oriented developer sounds like a great fit for your team then 
+                        If you are seeking a hard-working, motivated, and team-oriented developer to join your team, 
+                        I would love the opportunity to discuss how I can contribute to your organization's success.
                         <NavLink exact='true' to={'/contact'} className='highlight contact-me'>
                           <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={25} />
                         </NavLink>

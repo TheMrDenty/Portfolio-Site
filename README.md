@@ -141,5 +141,7 @@ https://grubersjoe.github.io/react-github-calendar/
   -returns Loader component.
 
 --== Things I Would Change/Add ==--
--Submenu's way of setting columns length to be scalable rather than hard codes.
--allow AnimatedLetters to take in a string and split each char into its own string so all you would have to do is call the component and pass in its desired class, the word you want animated, and when you want to start the animation
+
+- Submenu's way of setting columns length to be scalable rather than hard codes.
+- allow AnimatedLetters to take in a string and split each char into its own string so all you would have to do is call the component and pass in its desired class, the word you want animated, and when you want to start the animation
+- set a hover affect on buttons as well as a active class on navlinks

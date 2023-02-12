@@ -3,9 +3,10 @@ import AnimatedLetters from '../../components/AnimatedLetters'
 import { useGlobalContext } from '../../context';
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/index';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -16,7 +17,7 @@ const About = () => {
     /* console.log(catFact) */
     
     const [letterClass, setLetterClass] = useState('text-animate')
-    
+    const contactArray = ['c', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e!']
     
 
     useEffect(() => {
@@ -25,6 +26,9 @@ const About = () => {
         }, 4000)
       }, [])
     
+    const current = new Date();
+  
+    const learningYears = current.getFullYear() - 2022
     
     
     
@@ -38,10 +42,39 @@ const About = () => {
 
                     <h1 className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={1} /> </h1>
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius minus rerum nobis quas tempore obcaecati. Laboriosam alias labore praesentium? Saepe autem praesentium libero harum eveniet exercitationem quod iure omnis.
-                        Quos aliquam non, debitis, maiores est dolorem dignissimos provident inventore cupiditate fugiat quis harum tenetur? Fuga vero laudantium, eos reprehenderit cupiditate consectetur fugiat delectus earum accusamus hic, ipsa omnis expedita.
-                        Quis corrupti asperiores tenetur dolorum hic ab id, odio tempora ipsam iure esse in dignissimos ea, laudantium dolorem. Quis cupiditate distinctio illo adipisci voluptatum, a dolore consectetur velit excepturi sequi.
-                        Incidunt autem temporibus minima. Delectus, ipsum consequatur. Asperiores magnam vitae, nam a recusandae quod repudiandae sed facilis esse odio. Doloribus quasi magnam enim asperiores earum pariatur blanditiis. Fugit, maiores excepturi.
+                    <p>
+                        I am a Junior Web Developer with a passion for bringing my ideas to life through code. I have a strong understanding 
+                        of Responsive Web Design and Object-Oriented Programming and I am always eager to continue learning and strengthening 
+                        my skills. My focus is currently on front-end development, but I have a long-term goal of exploring game development 
+                        and machine learning as well.
+
+                        <br />
+                        <br />
+
+                        My journey into the world of coding started {learningYears} ago with my love for computers and video games. I have always been fascinated by the stories 
+                        that can be told through interactive experiences and I saw web development as a way to bring my own stories to life. To that end, 
+                        I have completed several programming courses, including the Per Scholas React Course Powered by TEKsystems, Nucamp's Complete 
+                        Software Engineering Bootcamp, and Infosys's Java Intensive Program. Through these programs, I have gained expertise in 
+                        technologies such as React, Redux, Java, SQL, Spring Boot, Postman, and more.
+
+                        <br />
+                        <br />
+
+                        I have also gained valuable experience in various industries, including real estate and the hospitality sector. As a Real Estate 
+                        Salesperson at Howard Hanna, I was responsible for helping clients navigate the real estate market and I was able to handle north 
+                        of $2 Million in sales through purchases and sales of residential and commercial properties. As a server at Outback Steakhouse, 
+                        I honed my communication skills and became a pro at balancing multiple tables while ensuring that each guest had a memorable experience.
+                        
+                        <br />
+                        <br />
+
+                        When I'm not coding or working, you can usually find me playing video games, binge-watching my favorite shows, or spending time with 
+                        friends and family. I am a hard-working, dedicated, and team-oriented developer who is always striving to be the best in what I do. 
+                        If you're looking for a developer who can bring your ideas to life with passion and expertise, please don't hesitate to
+                        <NavLink exact='true' to={'/contact'} className='highlight contact-me'>
+                          <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={25} />
+                        </NavLink>
+                    </p> 
                 </div>
 
                 <div className="skills-container">
@@ -49,7 +82,7 @@ const About = () => {
 
                         <div className='cubespinner'>
                             <div className='face1'>
-                                <FontAwesomeIcon icon={faAngular} color='#DD0031' />
+                                <FontAwesomeIcon icon={faJava} color='#f89820' />
                             </div>
                             <div className='face2'>
                                 <FontAwesomeIcon icon={faHtml5} color='#F06529' />
@@ -73,13 +106,13 @@ const About = () => {
 
                     <ul className='skills'>
                         <li><h1 className='highlight-green'> <AnimatedLetters letterClass={letterClass} strArray={['S', 'k', 'i', 'l', 'l', 's']} idx={7} /> </h1></li>
-                        <li>feafaadaaf</li>
-                        <li>eggsefefeaded</li>
-                        <li>aggvsdfesadascasada</li>
-                        <li>agefef</li>
-                        <li>egfdsvdsdaa</li>
-                        <li>fefeaa</li>
-                        <li>afasfcasdaswdad</li>
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Git</li>
+                        <li>Java</li>
+                        <li>Object Oriented Programming</li>
                     </ul>
                 </div>
 
