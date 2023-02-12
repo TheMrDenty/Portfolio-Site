@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import sublinks from "./data";
+import sublinks from "./data/sublinks-data";
 
 const AppContext = React.createContext();
 

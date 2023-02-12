@@ -1,6 +1,6 @@
 import './styles.scss';
 import React from 'react'
-import sublinks from '../../data'
+import sublinks from '../../data/sublinks-data'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'

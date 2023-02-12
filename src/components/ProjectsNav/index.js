@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom';
+import projects from '../../data/projects-data';
 import './styles.scss'
 
 function ProjectsNav() {
@@ -24,30 +26,26 @@ function ProjectsNav() {
     <>
       <div className="cards-container">
         <div id="cards">
-            <div className="card">
-              <div className="card-border"></div>
-              <div className="card-content"></div>
-            </div>
-            <div className="card">
-              <div className="card-border"></div>
-              <div className="card-content"></div>
-            </div>
-            <div className="card">
-              <div className="card-border"></div>
-              <div className="card-content"></div>
-            </div>
-            <div className="card">
-              <div className="card-border"></div>
-              <div className="card-content"></div>
-            </div>
-            <div className="card">
-              <div className="card-border"></div>
-              <div className="card-content"></div>
-            </div>
-            <div className="card">
-              <div className="card-border"></div>
-              <div className="card-content"></div>
-            </div>
+          {projects.map((project, idx) => {
+             
+              /* console.log(project); */
+              return (
+                <Link 
+                    key={idx}
+                    
+                    to={`/projects/${project.name}`}
+                >
+                  <div className="card">
+                    <div className="card-border"></div>
+                    <div className="card-content">
+                      <p>{project.name}</p>
+                    </div>
+                  </div>
+                </Link>
+
+              )
+            })}
+            
              
         </div>
       </div>

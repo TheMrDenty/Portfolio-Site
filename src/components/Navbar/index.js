@@ -4,7 +4,7 @@ import React from 'react'
 /* import logo from '../images/logo.svg' */
 import { FaBars } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
-import sublinks from '../../data.js'
+import sublinks from '../../data/sublinks-data.js'
 import { Link, NavLink } from 'react-router-dom';
 
 
