@@ -15,7 +15,7 @@ const Footer = () => {
                 {sublinks.map((item, index) => {
                     const {links, page} = item;
                     return (
-                        <article key={index} className={`${page[0]}-footer`}>
+                        <div key={index} className={`${page[0]}-footer`}>
                             <Link to={page[1]} >
                                 <h4>{page[0]}</h4>
                             </Link>
@@ -27,7 +27,7 @@ const Footer = () => {
                                     )
                                 })}
                             </div>
-                        </article>
+                        </div>
                     )
                 })}
             </div>

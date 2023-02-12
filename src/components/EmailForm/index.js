@@ -17,6 +17,7 @@ function EmailForm() {
         }, 4000)
       }, [])
 
+    // takes ref from declared form bellow
     const form = useRef()
 
     const sendEmail = (e) => {
@@ -24,10 +25,10 @@ function EmailForm() {
 
         emailjs
             .sendForm(
-                'service_un1cx7v',
-                'template_az14vev',
-                form.current,
-                'Dsqi747GOcBuKxsee'
+                /* service key */'service_un1cx7v',
+                /* template key */'template_az14vev',
+                /* where user inputs are */form.current,
+                /* user token */'Dsqi747GOcBuKxsee'
             )
             .then (
                 () => {
