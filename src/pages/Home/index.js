@@ -30,7 +30,7 @@ function Home() {
     <div className='home-page'>
       <div className='content'>
         
-          <section className='hero' onMouseOver={closeSubmenu}>
+          <section className='hero' >
               <div className='hero-center'>
                   <article className='hero-info'>
                     <img src={headshot} className='hero-img' alt='jamie' />

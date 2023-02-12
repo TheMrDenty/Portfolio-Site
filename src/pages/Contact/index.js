@@ -1,9 +1,8 @@
 import './styles.scss';
 
-import React, { useEffect, useRef, useState } from 'react'
+import React from 'react'
 
-import AnimatedLetters from '../../components/AnimatedLetters'
-import emailjs from '@emailjs/browser'
+
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import Loader from 'react-loaders';
 import Footer from '../../components/Footer';

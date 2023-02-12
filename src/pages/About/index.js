@@ -11,7 +11,7 @@ import Footer from '../../components/Footer/index';
 
 
 const About = () => {
-    const {catFact, /* setAboutLoad */} = useGlobalContext();
+    const {catFact} = useGlobalContext();
     
     /* console.log(catFact) */
     
@@ -36,12 +36,12 @@ const About = () => {
 
                 <div className="about">
 
-                <h1 className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={1} /> </h1>
+                    <h1 className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={1} /> </h1>
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius minus rerum nobis quas tempore obcaecati. Laboriosam alias labore praesentium? Saepe autem praesentium libero harum eveniet exercitationem quod iure omnis.
-                    Quos aliquam non, debitis, maiores est dolorem dignissimos provident inventore cupiditate fugiat quis harum tenetur? Fuga vero laudantium, eos reprehenderit cupiditate consectetur fugiat delectus earum accusamus hic, ipsa omnis expedita.
-                    Quis corrupti asperiores tenetur dolorum hic ab id, odio tempora ipsam iure esse in dignissimos ea, laudantium dolorem. Quis cupiditate distinctio illo adipisci voluptatum, a dolore consectetur velit excepturi sequi.
-                    Incidunt autem temporibus minima. Delectus, ipsum consequatur. Asperiores magnam vitae, nam a recusandae quod repudiandae sed facilis esse odio. Doloribus quasi magnam enim asperiores earum pariatur blanditiis. Fugit, maiores excepturi.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eius minus rerum nobis quas tempore obcaecati. Laboriosam alias labore praesentium? Saepe autem praesentium libero harum eveniet exercitationem quod iure omnis.
+                        Quos aliquam non, debitis, maiores est dolorem dignissimos provident inventore cupiditate fugiat quis harum tenetur? Fuga vero laudantium, eos reprehenderit cupiditate consectetur fugiat delectus earum accusamus hic, ipsa omnis expedita.
+                        Quis corrupti asperiores tenetur dolorum hic ab id, odio tempora ipsam iure esse in dignissimos ea, laudantium dolorem. Quis cupiditate distinctio illo adipisci voluptatum, a dolore consectetur velit excepturi sequi.
+                        Incidunt autem temporibus minima. Delectus, ipsum consequatur. Asperiores magnam vitae, nam a recusandae quod repudiandae sed facilis esse odio. Doloribus quasi magnam enim asperiores earum pariatur blanditiis. Fugit, maiores excepturi.
                 </div>
 
                 <div className="skills-container">
