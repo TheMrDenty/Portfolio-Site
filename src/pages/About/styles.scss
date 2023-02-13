@@ -182,7 +182,7 @@
     grid-column-start: 1;
     grid-column-end: 3;
     width: 100%;
-    height: 30rem;
+    height: 60rem;
     padding-top: 5rem;
     display: relative;
     text-align: center;
@@ -191,6 +191,12 @@
 
 .cat-fact {
     color: white;
+}
+
+.card-body {
+    display: grid;
+    place-items: center;
+    margin-top: 10rem;
 }
 
 // changes svgs to white with yellow halo
