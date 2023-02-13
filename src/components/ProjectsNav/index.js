@@ -5,9 +5,9 @@ import './styles.scss'
 
 function ProjectsNav() {
   const getMousePosition = () => {
-     document.getElementById("cards").onmousemove = e => {
+     document.getElementById("project-cards").onmousemove = e => {
       // loops over all of the cards and sets each cards position based on where the mouses position is
-      for(const card of document.getElementsByClassName("card")) {
+      for(const card of document.getElementsByClassName("project-card")) {
         const rect = card.getBoundingClientRect(),
               x = e.clientX - rect.left,
               y = e.clientY - rect.top;
@@ -24,8 +24,8 @@ function ProjectsNav() {
 
   return (
     <>
-      <div className="cards-container">
-        <div id="cards">
+      <div className="project-cards-container">
+        <div id="project-cards">
           {projects.map((project, idx) => {
              
               /* console.log(project); */
@@ -35,9 +35,9 @@ function ProjectsNav() {
                     
                     to={`/projects/${project.name}`}
                 >
-                  <div className="card">
-                    <div className="card-border"></div>
-                    <div className="card-content">
+                  <div className="project-card">
+                    <div className="project-card-border"></div>
+                    <div className="project-card-content">
                       <p>{project.name}</p>
                     </div>
                   </div>

@@ -7,7 +7,7 @@ import { faAngular, faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faReact } fro
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/index';
 import { NavLink } from 'react-router-dom';
-import Cards from '../../components/Cards';
+import Cards from '../../components/AboutCards';
 
 
 
@@ -72,6 +72,7 @@ const About = () => {
                         When I'm not coding or working, you can usually find me playing video games, binge-watching my favorite shows, or spending time with 
                         friends and family. I am a hard-working, dedicated, and team-oriented developer who is always striving to be the best in what I do. 
                         If you're looking for a developer who can bring your ideas to life with passion and expertise, please don't hesitate to
+                        <br />
                         <NavLink exact='true' to={'/contact'} className='highlight contact-me'>
                           <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={25} />
                         </NavLink>
@@ -124,7 +125,7 @@ const About = () => {
                     <div className='cat-fact'>
                         <h1>{catFact.length && catFact[0].text}</h1>
                     </div>
-                    <div className="card-body">
+                    <div className="about-card-body">
                         <Cards />
                     </div>
                 </div>

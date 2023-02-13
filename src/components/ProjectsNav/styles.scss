@@ -3,7 +3,7 @@
     --card-color: rgb(23,23,23);
 }
 
-.cards-container {
+.project-cards-container {
     
     align-items: center;
    
@@ -16,7 +16,7 @@
     padding: 0px;
 }
 
-#cards {
+#project-cards {
     // spaces cards into 2 rows of 3
     display: flex;
     flex-wrap: wrap;
@@ -25,11 +25,11 @@
     width: calc(100% - 20px);
 }
 // changes opacity for all divs borders within glows radius
-#cards:hover > .card > .card-border {
+#project-cards:hover > .project-card > .project-card-border {
     opacity: 1;
 }
 
-.card {
+.project-card {
     background-color: rgba(255,255,255,.1);
     border-radius: 10px;
     cursor: pointer;
@@ -38,12 +38,12 @@
     width: 300px;
 }
 
-.card:hover::before {
+.project-card:hover::before {
     opacity: 1;
 }
 
-.card::before,
-.card > .card-border {
+.project-card::before,
+.project-card > .project-card-border {
     
     border-radius: inherit;
     content: '';
@@ -57,7 +57,7 @@
   
 }
 
-.card::before {
+.project-card::before {
     // glow effect
     background: radial-gradient(
                         /* sets glow effect at mouse location */
@@ -68,7 +68,7 @@
     z-index: 3;
 }
 
-.card > .card-border {
+.project-card > .project-card-border {
     background: radial-gradient(
         1500px circle at var(--mouse-x) var(--mouse-y),
         var(--clr-secondary-2),
@@ -77,7 +77,7 @@
     z-index: 1;
 }
 
-.card > .card-content {
+.project-card > .project-card-content {
     // creates a border to apply the glow effect to
     background-color: var(--card-color);
     border-radius: inherit;
