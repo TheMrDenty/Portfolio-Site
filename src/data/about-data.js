@@ -6,6 +6,23 @@ import blu1 from '../images/cat-imgs/blu1.jpg'
 import blu2 from '../images/cat-imgs/blu2.jpg'
 import blu3 from '../images/cat-imgs/blu3.jpg'
 import blu4 from '../images/cat-imgs/blu4.jpg'
+import rocketLeague from '../images/hobby-imgs/rocketLeague.jpg'
+import theLastOfUs from '../images/hobby-imgs/theLastOfUs.jpg'
+import chess from '../images/hobby-imgs/chess.jpg'
+import snowboarding from '../images/hobby-imgs/snowboarding.jpg'
+import concert from '../images/hobby-imgs/concert.jpg'
+import starWars from '../images/hobby-imgs/starWars.jpg'
+import pulpFiction from '../images/hobby-imgs/pulpFiction.jpg'
+import breakingBad from '../images/hobby-imgs/breakingBad.jpg'
+import faces from '../images/music-imgs/faces.jpg'
+import mrMorale from '../images/music-imgs/mrMorale.jpg'
+import yourEyes from '../images/music-imgs/yourEyes.jpg'
+import ratm from '../images/music-imgs/ratm.jpg'
+import theBlueAlbum from '../images/music-imgs/theBlueAlbum.jpg'
+import mmFood from '../images/music-imgs/mmFood.jpg'
+import inUtero from '../images/music-imgs/inUtero.jpg'
+import sublime from '../images/music-imgs/sublime.jpg'
+
 
 const aboutTopics = [
     {
@@ -58,43 +75,43 @@ const aboutTopics = [
         content: [
             {   
                 id: 0,
-                petName: 'test',
-                img: `..`,
+                petName: 'Rocket League',
+                img: `..${rocketLeague}`,
             },
             {
                 id: 1,
-                petName: 'test',
-                img: `..`,
+                petName: 'The Last Of Us',
+                img: `..${theLastOfUs}`,
             },
             {
                 id: 2,
-                petName: 'test',
-                img: `..`,
+                petName: 'Chess',
+                img: `..${chess}`,
             },
             {
                 id: 3,
-                petName: 'test',
-                img: `..`,
+                petName: 'Snowboarding',
+                img: `..${snowboarding}`,
             },
             {
                 id: 4,
-                petName: 'test',
-                img: `..`,
+                petName: 'pulp fiction',
+                img: `..${pulpFiction}`,
             },
             {
                 id: 5,
-                petName: 'test',
-                img: `..`,
+                petName: 'star wars',
+                img: `..${starWars}`,
             },
             {
                 id: 6,
-                petName: 'test',
-                img: `..`,
+                petName: 'breakingBad',
+                img: `..${breakingBad}`,
             },
             {
                 id: 7,
-                petName: 'test',
-                img: `..`,
+                petName: 'Concerts',
+                img: `..${concert}`,
             },
         ]
     },
@@ -102,43 +119,43 @@ const aboutTopics = [
         content: [
             {   
                 id: 0,
-                petName: 'test1',
-                img: `..`,
+                petName: 'faces',
+                img: `..${faces}`,
             },
             {
                 id: 1,
-                petName: 'test1',
-                img: `..`,
+                petName: 'Mr.Morale and the Big Stepper',
+                img: `..${mrMorale}`,
             },
             {
                 id: 2,
-                petName: 'test1',
-                img: `..`,
+                petName: '4 your eyes only',
+                img: `..${yourEyes}`,
             },
             {
                 id: 3,
-                petName: 'test1',
-                img: `..`,
+                petName: 'rage against the machine',
+                img: `..${ratm}`,
             },
             {
                 id: 4,
-                petName: 'test1',
-                img: `..`,
+                petName: 'the blue album',
+                img: `..${theBlueAlbum}`,
             },
             {
                 id: 5,
-                petName: 'test1',
-                img: `..`,
+                petName: 'MM...Food',
+                img: `..${mmFood}`,
             },
             {
                 id: 6,
-                petName: 'test1',
-                img: `..`,
+                petName: 'in utero',
+                img: `..${inUtero}`,
             },
             {
                 id: 7,
-                petName: 'test1',
-                img: `..`,
+                petName: 'sublime',
+                img: `..${sublime}`,
             },
         ]
 
