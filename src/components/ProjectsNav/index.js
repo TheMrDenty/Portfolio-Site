@@ -32,7 +32,7 @@ function ProjectsNav() {
               return (
                 <Link 
                     key={idx}
-                    
+                    className='project-in-the-way'
                     to={`/projects/${project.name}`}
                 >
                   <div className="project-card">

@@ -3,6 +3,7 @@ import './styles.scss'
 import pets from '../../data/pets-data'
 import hobbies from '../../data/hobbies-data'
 import music from '../../data/music-data'
+import aboutTopics from '../../data/about-data'
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -62,84 +63,38 @@ function Cards() {
   return (
     <div className="about-card-swiper">
         <div className='about-card-groups'>
-            <div className='about-card-group' data-index='0' data-status='active'>
-                {pets.map((pet, idx) => {
-                    const {petName, img} = pet;
-                    console.log(img, petName);
-                    
-                    if (idx % 2 === 0) {
-                        console.log(idx);
-                        return (
-                                <div key={idx} className="little-about-card about-card">
+            {aboutTopics.map((topic, idx) => {
+                const {content} = topic
+                console.log(content, idx);
+                return (
+                    <div className='about-card-group' data-index={idx} data-status='active'>
+                    {content.map((topic, idx) => {
+                        const {petName, img} = topic;
+                        /* console.log(img, petName); */
+                        
+                        if (idx % 2 === 0) {
+                            /* console.log(idx); */
+                            return (
+                                    <div key={idx} className="little-about-card about-card">
+                                        <h1>{petName}</h1>
+                                        <img src={img} alt={petName} />
+                                        
+                                    </div>
+                            )
+                        } else if (idx % 2 !== 0) {
+                            return (
+                                <div className="big-about-card about-card">
                                     <h1>{petName}</h1>
                                     <img src={img} alt={petName} />
-                                    
                                 </div>
-                        )
-                    } else if (idx % 2 !== 0) {
-                        return (
-                            <div className="big-about-card about-card">
-                                <h1>{petName}</h1>
-                                <img src={img} alt={petName} />
-                            </div>
-                        )
-                    }
-                    return null
-                })}
+                            )
+                        }
+                        return null
+                    })}
+                </div>
+                )
+            })}
             
-            </div>
-            <div className='about-card-group' data-index='1' data-status='unknown'>
-                {hobbies.map((hobby, idx) => {
-                    const {petName, img} = hobby;
-                    console.log(img, petName);
-                    
-                    if (idx % 2 === 0) {
-                        console.log(idx);
-                        return (
-                                <div key={idx} className="little-about-card about-card">
-                                    <h1>{petName}</h1>
-                                    <img src={img} alt={petName} />
-                                    
-                                </div>
-                        )
-                    } else if (idx % 2 !== 0) {
-                        return (
-                            <div className="big-about-card about-card">
-                                <h1>{petName}</h1>
-                                <img src={img} alt={petName} />
-                            </div>
-                        )
-                    }
-                    return null
-                })}
-            
-            </div>
-            <div className='about-card-group' data-index='2' data-status='unknown'>
-                {music.map((music, idx) => {
-                    const {petName, img} = music;
-                    console.log(img, petName);
-                    
-                    if (idx % 2 === 0) {
-                        console.log(idx);
-                        return (
-                                <div key={idx} className="little-about-card about-card">
-                                    <h1>{petName}</h1>
-                                    <img src={img} alt={petName} />
-                                    
-                                </div>
-                        )
-                    } else if (idx % 2 !== 0) {
-                        return (
-                            <div className="big-about-card about-card">
-                                <h1>{petName}</h1>
-                                <img src={img} alt={petName} />
-                            </div>
-                        )
-                    }
-                    return null
-                })}
-            
-            </div>
         </div>
         <div className="about-card-swiper-buttons">
             <button id='left-button' onClick={handleLeftClick}>

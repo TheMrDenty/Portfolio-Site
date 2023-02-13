@@ -25,7 +25,7 @@
     width: calc(100% - 20px);
 }
 // changes opacity for all divs borders within glows radius
-#project-cards:hover > .project-card > .project-card-border {
+#project-cards:hover > .project-in-the-way > .project-card > .project-card-border {
     opacity: 1;
 }
 

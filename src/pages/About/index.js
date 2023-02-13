@@ -7,7 +7,7 @@ import { faAngular, faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faReact } fro
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/index';
 import { NavLink } from 'react-router-dom';
-import Cards from '../../components/AboutCards';
+import AboutCards from '../../components/AboutCards';
 
 
 
@@ -126,7 +126,7 @@ const About = () => {
                         <h1>{catFact.length && catFact[0].text}</h1>
                     </div>
                     <div className="about-card-body">
-                        <Cards />
+                        <AboutCards />
                     </div>
                 </div>
                 
