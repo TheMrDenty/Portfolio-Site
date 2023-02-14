@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import Loader from 'react-loaders';
 
+
 const Projects = () => {
     const {joke, getRandomInt} = useGlobalContext();
     const [currentJoke, setCurrentJoke] = useState();
@@ -40,9 +41,10 @@ const Projects = () => {
                 <h1 className='highlight'>
                     <AnimatedLetters letterClass={letterClass} strArray={projectsArray} idx={1} />
                 </h1>
-                <ProjectsNav />
                 
-                <div className="github">
+                <ProjectsNav id='projects' />
+                
+                <div className="github" id='github'>
                     <h1 className='highlight'>
                         <AnimatedLetters letterClass={letterClass} strArray={gitArray} idx={9} />
                     </h1>
@@ -52,10 +54,10 @@ const Projects = () => {
                     
                 </div>
 
-                <div className='joke'>
+                <div className='joke' >
                     <h1>{joke[currentJoke] && joke[currentJoke].setup}</h1>
                     {show? <h1>{joke.length && joke[currentJoke].punchline}</h1> : <button className='flat-button' onClick={handleShow}>Show Punchline</button>}
-                    <button className='flat-button' onClick={handleSetJoke}>Get Random Joke</button>
+                    <button id='joke' className='flat-button' onClick={handleSetJoke}>Get Random Joke</button>
                 </div>
 
             </div>

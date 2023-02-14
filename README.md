@@ -146,5 +146,5 @@ https://grubersjoe.github.io/react-github-calendar/
 - add new css for Submenu that better matches the sites theme.
 - allow AnimatedLetters to take in a string and split each char into its own string so all you would have to do is call the component and pass in its desired class, the word you want animated, and when you want to start the animation
 - set a hover affect on buttons as well as a active class on navlinks
-- add in a way to download my resume
 - add pop-out on home img.
+- find a way to line the hash links to the top of the desired link

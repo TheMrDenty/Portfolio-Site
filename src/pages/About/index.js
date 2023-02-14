@@ -39,11 +39,11 @@ const About = () => {
         <>        
             <div className='about-page'>
 
-                <div className="about">
+                <div id='bio' className="about">
 
-                    <h1 className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={1} /> </h1>
+                    <h1  className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={1} /> </h1>
 
-                    <p>
+                    <p >
                         I am a Junior Web Developer with a passion for bringing my ideas to life through code. I have a strong understanding 
                         of Responsive Web Design and Object-Oriented Programming and I am always eager to continue learning and strengthening 
                         my skills. My focus is currently on front-end development, but I have a long-term goal of exploring game development 
@@ -79,7 +79,7 @@ const About = () => {
                     </p> 
                 </div>
 
-                <div className="skills-container">
+                <div className="skills-container" id='skills'>
                     <div className='stage-cube-cont'>
 
                         <div className='cubespinner'>
@@ -119,7 +119,7 @@ const About = () => {
                 </div>
 
 
-                <div className="at-home">
+                <div className="at-home" id='home'>
                     <h1 className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 't', ' ', 'H', 'o', 'm', 'e']} idx={15} /> </h1>
 
                     <div className='cat-fact'>

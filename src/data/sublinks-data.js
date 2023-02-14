@@ -11,9 +11,9 @@ const sublinks = [
       '/about'
     ],
     links: [
-      { label: 'payment', icon: <FaCreditCard />, url: '/products' },
-      { label: 'terminal', icon: <FaCreditCard />, url: '/products' },
-      { label: 'connect', icon: <FaCreditCard />, url: '/products' },
+      { label: 'bio', icon: <FaCreditCard />, url: '/about#bio' },
+      { label: 'skills', icon: <FaCreditCard />, url: '/about#skills' },
+      { label: 'at home', icon: <FaCreditCard />, url: '/about#home' },
     ],
   },
   {
@@ -21,10 +21,10 @@ const sublinks = [
       'projects', '/projects',
     ],
     links: [
-      { label: 'plugins', icon: <FaBook />, url: '/products' },
-      { label: 'libraries', icon: <FaBook />, url: '/products' },
-      { label: 'help', icon: <FaBook />, url: '/products' },
-      { label: 'billing', icon: <FaBook />, url: '/products' },
+      { label: 'project list', icon: <FaBook />, url: '/projects#projects' },
+      { label: 'commit history', icon: <FaBook />, url: '/projects#github' },
+      { label: 'site code', icon: <FaBook />, url: 'https://github.com/TheMrDenty/Portfolio-Site' },
+      { label: 'joke', icon: <FaBook />, url: '/projects#joke' },
     ],
   },
   {

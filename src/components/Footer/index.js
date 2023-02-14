@@ -4,6 +4,7 @@ import sublinks from '../../data/sublinks-data'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
 
@@ -23,7 +24,7 @@ const Footer = () => {
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
-                                        <a key={index} className='link-text' href={url}><p>{icon}{label}</p></a>
+                                        <HashLink key={index} className='link-text' to={url}><p>{icon}{label}</p></HashLink>
                                     )
                                 })}
                             </div>
