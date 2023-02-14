@@ -7,12 +7,23 @@ import './styles.scss'
 function Project() {
   const location = useLocation();
   const propsData = location.state;
-  console.log(propsData);
+  const {name, img, why, learned, nextTime} = propsData;
+  
   
   return (
     <>
         <div className='project-container'>
-            <img src={propsData.img} alt={propsData.name} />
+            <h1>{name}</h1>
+            
+            <img src={img} alt={name} />
+            <p>{why}</p>
+            <ul>{learned.map((item, index) => {
+              console.log(item.item, index);
+              return (
+                <li>{item.item}</li>
+              )
+            })}</ul>
+            <p>{nextTime}</p>
         </div>
         <Footer />
     </>
