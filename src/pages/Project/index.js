@@ -1,10 +1,10 @@
 import React from 'react'
-import { Link, useLocation, useParams } from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import Footer from '../../components/Footer'
-import { useGlobalContext } from '../../context';
+
 import './styles.scss'
 
-function Project(props) {
+function Project() {
   const location = useLocation();
   const propsData = location.state;
   console.log(propsData);
@@ -14,6 +14,7 @@ function Project(props) {
         <div className='project-container'>
             <img src={propsData.img} alt={propsData.name} />
         </div>
+        <Footer />
     </>
   )
 }

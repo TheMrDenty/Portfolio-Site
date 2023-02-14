@@ -2,6 +2,7 @@ import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import JamieTaberPlaistedResume from '../data/JamieTaberPlaistedResume.pdf'
 
 const sublinks = [
   {
@@ -31,8 +32,8 @@ const sublinks = [
       'contact', '/contact',
     ],
     links: [
-      { label: 'detailed', icon: <FontAwesomeIcon icon={faUser} />, url: '/contact' },
-      { label: 'customers', icon: <FaBriefcase />, url: '/products' },
+      { label: 'email me', icon: <FontAwesomeIcon icon={faUser} />, url: '/contact' },
+      { label: <a href={JamieTaberPlaistedResume} download className='resume' > my resume</a>, icon: <FaBriefcase />, url: '/contact' },
     ],
   },
 ];

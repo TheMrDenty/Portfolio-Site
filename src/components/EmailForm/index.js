@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-
+import JamieTaberPlaistedResume from '../../data/JamieTaberPlaistedResume.pdf'
 import AnimatedLetters from '../../components/AnimatedLetters'
 import emailjs from '@emailjs/browser'
 import './styles.scss'
@@ -53,6 +53,7 @@ function EmailForm() {
                 <p>
                 Don't miss this opportunity to connect with a hard-working, dedicated, and team-oriented Junior Web Developer. 
                 Fill out the form below to start the conversation and take the next step in our journey.
+                <a href={JamieTaberPlaistedResume} download className='highlight'> Download my resume. </a>
                 </p>
                 <div className='contact-form'>
                     <form ref={form} onSubmit={sendEmail}>

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom';
-import { useGlobalContext } from '../../context';
+import { Link } from 'react-router-dom';
+
 import projects from '../../data/projects-data';
 import './styles.scss'
 
 function ProjectsNav() {
-  const {setProps} = useGlobalContext();
+  
 
   const getMousePosition = () => {
      document.getElementById("project-cards").onmousemove = e => {

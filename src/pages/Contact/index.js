@@ -2,7 +2,7 @@ import './styles.scss';
 
 import React from 'react'
 
-
+import JamieTaberPlaistedResume from '../../data/JamieTaberPlaistedResume.pdf'
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 import Loader from 'react-loaders';
 import Footer from '../../components/Footer';
@@ -29,6 +29,7 @@ const Contact = () => {
                     <br />
                     Elmira, NY<br />
                     <br />
+                    <a href={JamieTaberPlaistedResume} download className='highlight'> Download my resume </a>
                     <span>jamietp113@gmail.com</span>
                 </div>
                 <MapContainer center={[	42.089796,  -76.807734]} zoom={13} className='map'>

@@ -1,11 +1,12 @@
 import './styles.scss';
 
 import React, { useEffect, useState } from 'react'
-import { useGlobalContext } from '../../context'
+
 import headshot from '../../images/headshot.jpg';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import Footer from '../../components/Footer';
 import { NavLink } from 'react-router-dom';
+import JamieTaberPlaistedResume from '../../data/JamieTaberPlaistedResume.pdf'
 
 function Home() {
 
@@ -20,7 +21,7 @@ function Home() {
     }, 4000)
   }, [])
 
-  const {closeSubmenu} = useGlobalContext();
+ 
 
   
   
@@ -63,10 +64,12 @@ function Home() {
 
                         If you are seeking a hard-working, motivated, and team-oriented developer to join your team, 
                         I would love the opportunity to discuss how I can contribute to your organization's success.
+                        <a href={JamieTaberPlaistedResume} download className='highlight'> Download my resume </a>
+                         and
                         <NavLink exact='true' to={'/contact'} className='highlight contact-me'>
                           <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={25} />
                         </NavLink>
-
+                        
                       </p>
                     </div>
                   </article>
