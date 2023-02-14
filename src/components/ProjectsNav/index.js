@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { useGlobalContext } from '../../context';
 import projects from '../../data/projects-data';
 import './styles.scss'
 
 function ProjectsNav() {
+  const {setProps} = useGlobalContext();
+
   const getMousePosition = () => {
      document.getElementById("project-cards").onmousemove = e => {
       // loops over all of the cards and sets each cards position based on where the mouses position is
@@ -27,18 +30,21 @@ function ProjectsNav() {
       <div className="project-cards-container">
         <div id="project-cards">
           {projects.map((project, idx) => {
+             const {name, img, id} = project;
              
               /* console.log(project); */
               return (
                 <Link 
                     key={idx}
+                    state={project}
                     className='project-in-the-way'
-                    to={`/projects/${project.name}`}
+                    to={`/projects/${name}`}
                 >
                   <div className="project-card">
                     <div className="project-card-border"></div>
                     <div className="project-card-content">
-                      <p>{project.name}</p>
+                      <p>{name}</p>
+                      <img src={img} alt={name} />
                     </div>
                   </div>
                 </Link>

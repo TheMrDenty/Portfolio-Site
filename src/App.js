@@ -7,7 +7,7 @@ import Projects from "./pages/Projects/index";
 import About from "./pages/About/index";
 import Project from "./pages/Project";
 
-function App() {
+function App(props) {
   return (
     <>
       <Routes>

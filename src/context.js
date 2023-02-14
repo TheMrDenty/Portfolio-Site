@@ -7,7 +7,7 @@ export const AppProvider = ({children}) => {
 
     const [location, setLocation] = useState({});
     const [page, setPage] = useState({page:[''], links:[]});
-   
+    
     /* SIDEBAR */
 
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -93,6 +93,9 @@ export const AppProvider = ({children}) => {
         getJoke();
     }, []);
 
+    /* --project-- */
+    
+
 
 
     const getRandomInt = (max) => {
@@ -103,7 +106,7 @@ export const AppProvider = ({children}) => {
     
     return <AppContext.Provider value={{
         isSubmenuOpen, isModalOpen, openSubmenu, openModal, closeSubmenu, closeModal, location, page,
-        catFact, joke, getRandomInt
+        catFact, joke, getRandomInt, 
     }}>
         {children}
     </AppContext.Provider>

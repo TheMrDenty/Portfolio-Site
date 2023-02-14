@@ -36,6 +36,8 @@
     height: 260px;
     position: relative;
     width: 300px;
+    padding-top: 2px;
+    padding-left: 2px;
 }
 
 .project-card:hover::before {
@@ -82,9 +84,37 @@
     background-color: var(--card-color);
     border-radius: inherit;
     height: calc(100% - 2px);
-    margin: 1px;
+    
     position: relative;
     width: calc(100% - 2px);
     z-index: 2;
+}
+
+.project-card-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.project-card-content p {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.667);
+    justify-content: center;
+    z-index: 1;
+    top: 1rem;
+    padding: .5rem;
+}
+
+.project-card-content img {
+    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: inherit;
+}
+
+.project-card-content > img {
+    opacity: .5;
 }
 
