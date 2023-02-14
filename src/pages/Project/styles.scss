@@ -1,12 +1,34 @@
 .project-container {
-    background-color: aliceblue;
+    padding-top: 10rem;
+    margin-top: 7rem;
     width: 100%;
     height: 100%;
+    text-align: center;
+}
+
+.project-name {
+    font-size: 4rem;
     
 }
 
 .project-container p, li {
     margin-top: 1rem;
     margin-left: 1rem;
-    color: black;
+    color: white;
+}
+
+.project-container img {
+    padding: 0 5rem 0rem 5rem;
+    height: 75%;
+    width: 75%;
+}
+
+.project-section {
+    padding: 5rem 7rem 0rem 7rem;
+}
+
+.footer .resume {
+    color: var(--clr-white);
+    display: inline;
+    padding: 0 0;
 }
