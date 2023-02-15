@@ -8,7 +8,6 @@ import AnimatedLetters from '../../components/AnimatedLetters';
 import Loader from 'react-loaders';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { useCallback } from 'react';
 
 
 const Projects = () => {
@@ -26,7 +25,13 @@ const Projects = () => {
         
       }, [])
 
-    
+    useEffect(() => {
+        const handleSetJoke = () => {
+            setShow(false)
+            setCurrentJoke(getRandomInt(10))
+        } 
+        handleSetJoke();
+    }, [])
 
     
 
@@ -34,10 +39,7 @@ const Projects = () => {
         setShow(true);
     }
 
-    const handleSetJoke = useCallback(() => {
-        setShow(false)
-        setCurrentJoke(getRandomInt(10))
-    }, [])
+    
     
     
     /* console.log(joke[currentJoke]) */
