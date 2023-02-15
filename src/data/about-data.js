@@ -29,42 +29,42 @@ const aboutTopics = [
         content: [
             {   
                 id: 0,
-                petName: 'athena',
+                name: 'athena',
                 img: `..${athena1}`,
             },
             {
                 id: 1,
-                petName: 'athena',
+                name: 'athena',
                 img: `..${athena5}`,
             },
             {
                 id: 2,
-                petName: 'athena',
+                name: 'athena',
                 img: `..${athena3}`,
             },
             {
                 id: 3,
-                petName: 'athena',
+                name: 'athena',
                 img: `..${athena4}`,
             },
             {
                 id: 4,
-                petName: 'blu',
+                name: 'blu',
                 img: `..${blu1}`,
             },
             {
                 id: 5,
-                petName: 'blu',
+                name: 'blu',
                 img: `..${blu2}`,
             },
             {
                 id: 6,
-                petName: 'blu',
+                name: 'blu',
                 img: `..${blu3}`,
             },
             {
                 id: 7,
-                petName: 'blu',
+                name: 'blu',
                 img: `..${blu4}`,
             },
         ]
@@ -75,42 +75,42 @@ const aboutTopics = [
         content: [
             {   
                 id: 0,
-                petName: 'Rocket League',
+                name: 'Rocket League',
                 img: `..${rocketLeague}`,
             },
             {
                 id: 1,
-                petName: 'The Last Of Us',
+                name: 'The Last Of Us',
                 img: `..${theLastOfUs}`,
             },
             {
                 id: 2,
-                petName: 'Chess',
+                name: 'Chess',
                 img: `..${chess}`,
             },
             {
                 id: 3,
-                petName: 'Snowboarding',
+                name: 'Snowboarding',
                 img: `..${snowboarding}`,
             },
             {
                 id: 4,
-                petName: 'pulp fiction',
+                name: 'pulp fiction',
                 img: `..${pulpFiction}`,
             },
             {
                 id: 5,
-                petName: 'star wars',
+                name: 'star wars',
                 img: `..${starWars}`,
             },
             {
                 id: 6,
-                petName: 'breakingBad',
+                name: 'breakingBad',
                 img: `..${breakingBad}`,
             },
             {
                 id: 7,
-                petName: 'Concerts',
+                name: 'Concerts',
                 img: `..${concert}`,
             },
         ]
@@ -119,42 +119,42 @@ const aboutTopics = [
         content: [
             {   
                 id: 0,
-                petName: 'faces',
+                name: 'faces',
                 img: `..${faces}`,
             },
             {
                 id: 1,
-                petName: 'Mr.Morale and the Big Stepper',
+                name: 'Mr.Morale and the Big Stepper',
                 img: `..${mrMorale}`,
             },
             {
                 id: 2,
-                petName: '4 your eyes only',
+                name: '4 your eyes only',
                 img: `..${yourEyes}`,
             },
             {
                 id: 3,
-                petName: 'rage against the machine',
+                name: 'rage against the machine',
                 img: `..${ratm}`,
             },
             {
                 id: 4,
-                petName: 'the blue album',
+                name: 'the blue album',
                 img: `..${theBlueAlbum}`,
             },
             {
                 id: 5,
-                petName: 'MM...Food',
+                name: 'MM...Food',
                 img: `..${mmFood}`,
             },
             {
                 id: 6,
-                petName: 'in utero',
+                name: 'in utero',
                 img: `..${inUtero}`,
             },
             {
                 id: 7,
-                petName: 'sublime',
+                name: 'sublime',
                 img: `..${sublime}`,
             },
         ]

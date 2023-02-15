@@ -122,7 +122,14 @@ used for navigation to specific spots on a page
 
 --projects-data--
 
---sublinks-data--
+- imports images
+- each object in aboutTopics array holds an img and a name property
+
+--projects-data--
+
+- imports imgs
+- each object in the projects array holds an img a why paragraph, a learned array that holds statements in each object, and a next item paragraph
+  --sublinks-data--
 
 - imports icons from fort awesome and font-awesome.
 - sublinks array stores a page array, which stores a array of strings for its name and its route, and a links array which stores the same data as well as an icon.
@@ -132,19 +139,18 @@ used for navigation to specific spots on a page
 --About--
 
 - imports AnimatedLetters, useGlobalContext, Footer, and Fort Awesome Icons.
-- destructures catFact from global context.
 - sets letterClass state for AnimatedLetters component.
 - sets 4s timeout for onhover effect for AnimatedLetters component.
 - returns AnimatedLetters component and about me section.
 - returns skills section with cubespinner animation.
-- returns at home section with catFact api info on display.
+- returns at home section with aboutCards on display.
 - returns Footer component
 
 --Contact--
 
 - imports Loader, Footer, EmailForm, and Map components.
 - returns EmailForm
-- returns a div with map information and a MapContainer with position data, maps url, and a marker.
+- returns a div with map information and a link to my github, linkedin, and a resume download, as well as a MapContainer with position data, maps url, and a marker.
 - returns Footer component.
 - returns Loader component.
 
@@ -159,6 +165,14 @@ used for navigation to specific spots on a page
 
 --Project--
 
+- imports Footer and AnimatedLetters.
+- sets props data and letterClass state, arrays, and animation delay for AnimatedLetters component.
+- returns name and img from alt
+- returns a section with an AnimatedLetters h1 with why prop displayed under it.
+- returns a ul that maps out learned array from props as li's.
+- returns a section with an AnimatedLetters h1 with nextTime prop displayed under it.
+- returns Footer Component
+
 --Projects--
 
 - imports GithubCalendar, useGlobalContext, Footer, ProjectsNav, AnimatedLetters, and Loader.
@@ -171,8 +185,8 @@ used for navigation to specific spots on a page
 - returns ProjectsNav.
 - returns github div which displays a AnimatedLetters component and my github commit calender
 - returns joke div which checks if there is a joke in state and displays the current jokes setup and two buttons, one checks if show state is true and if it is it checks if there are jokes in state and if so displays current jokes punchline, if show is false displays show punchline button that calls handleShow function onclick, the other displays a get random joke button which calls handleSetJoke onclick.
-  -returns Footer component.
-  -returns Loader component.
+- returns Footer component.
+- returns Loader component.
 
 --== Things I Would Change/Add ==--
 

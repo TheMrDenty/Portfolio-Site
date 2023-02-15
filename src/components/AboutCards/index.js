@@ -69,23 +69,23 @@ function Cards() {
                     return (
                         <div key={idx} className='about-card-group' data-index={idx} data-status='active'>
                             {content.map((topic, idx) => {
-                                const {petName, img} = topic;
+                                const {name, img} = topic;
                                 /* console.log(img, petName); */
                                 
                                 if (idx % 2 === 0) {
                                     /* console.log(idx); */
                                     return (
                                             <div key={idx} className="little-about-card about-card">
-                                                <h1>{petName}</h1>
-                                                <img src={img} alt={petName} />
+                                                <h1>{name}</h1>
+                                                <img src={img} alt={name} />
                                                 
                                             </div>
                                     )
                                 } else if (idx % 2 !== 0) {
                                     return (
                                         <div key={idx} className="big-about-card about-card">
-                                            <h1>{petName}</h1>
-                                            <img src={img} alt={petName} />
+                                            <h1>{name}</h1>
+                                            <img src={img} alt={name} />
                                         </div>
                                     )
                                 }
@@ -97,23 +97,23 @@ function Cards() {
                     return (
                         <div className='about-card-group' data-index={idx} data-status='unknown'>
                             {content.map((topic, idx) => {
-                                const {petName, img} = topic;
+                                const {name, img} = topic;
                                 /* console.log(img, petName); */
                                 
                                 if (idx % 2 === 0) {
                                     /* console.log(idx); */
                                     return (
                                             <div key={idx} className="little-about-card about-card">
-                                                <h1>{petName}</h1>
-                                                <img src={img} alt={petName} />
+                                                <h1>{name}</h1>
+                                                <img src={img} alt={name} />
                                                 
                                             </div>
                                     )
                                 } else if (idx % 2 !== 0) {
                                     return (
                                         <div className="big-about-card about-card">
-                                            <h1>{petName}</h1>
-                                            <img src={img} alt={petName} />
+                                            <h1>{name}</h1>
+                                            <img src={img} alt={name} />
                                         </div>
                                     )
                                 }
