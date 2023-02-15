@@ -41,8 +41,8 @@ p {
   .info-map {
     position: absolute;
     background: var(--clr-grey);
-    top: 18rem;
-    right: 18rem;
+    top: 20%;
+    margin-left: 2%;
     z-index: 1;
     width: 267px;
     padding: 20px;
@@ -81,7 +81,7 @@ p {
     z-index: 10;
   }
   
-  @media screen and (max-width: 1200px) {
+/*   @media screen and (max-width: 1200px) {
     .map-wrap {
       float: none;
       margin: 0;
@@ -92,4 +92,4 @@ p {
     .info-map {
       display: none;
     }
-  }
+  } */

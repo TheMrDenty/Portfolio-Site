@@ -4,6 +4,7 @@ import React from 'react'
 import { FaTimes } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
 import sublinks from '../../data/sublinks-data'
+import { NavLink } from 'react-router-dom';
 
 function Modal() {
 
@@ -20,7 +21,9 @@ function Modal() {
                     const {links, page} = item;
                     return (
                         <article key={index}>
-                            <h4>{page}</h4>
+                            <NavLink exact='true' to={page[1]} onClick={closeModal}>
+                                <h4>{page[0]}</h4>
+                            </NavLink>
                             <div className='modal-sublinks'>
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
