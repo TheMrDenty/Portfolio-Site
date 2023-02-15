@@ -35,7 +35,7 @@ function Home() {
                     <img src={headshot} className='hero-img' alt='jamie' />
 
                     <div className='my-name'>
-                      <h1 className='highlight'>
+                      <h1 className='highlight name'>
                         <AnimatedLetters letterClass={letterClass} strArray={welcomeArray} idx={1} />
                         <br /> 
                         <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={9} />
@@ -64,9 +64,9 @@ function Home() {
 
                         If you are seeking a hard-working, motivated, and team-oriented developer to join your team, 
                         I would love the opportunity to discuss how I can contribute to your organization's success.
-                        <a href={JamieTaberPlaistedResume} download className='highlight'> Download my resume </a>
+                        <a href={JamieTaberPlaistedResume} download className='highlight small'> Download my resume </a>
                          and
-                        <NavLink exact='true' to={'/contact'} className='highlight contact-me'>
+                        <NavLink exact='true' to={'/contact'} className='highlight contact-me small'>
                           <AnimatedLetters letterClass={letterClass} strArray={contactArray} idx={25} />
                         </NavLink>
                         
