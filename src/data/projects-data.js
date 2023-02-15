@@ -1,4 +1,4 @@
-import React from "react"
+
 import placeholder from '../images/projects-imgs/placeholder.png'
 import portfolio from '../images/projects-imgs/portfolio.png'
 import saveTheUniverse from '../images/projects-imgs/saveTheUniverse.png'

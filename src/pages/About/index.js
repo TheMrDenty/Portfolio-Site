@@ -1,9 +1,9 @@
 import './styles.scss'
 import AnimatedLetters from '../../components/AnimatedLetters'
-import { useGlobalContext } from '../../context';
-import Loader from 'react-loaders';
+
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngular, faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
+import {faCss3, faGitAlt, faHtml5, faJava, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
 import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/index';
 import { NavLink } from 'react-router-dom';
@@ -13,7 +13,7 @@ import AboutCards from '../../components/AboutCards';
 
 
 const About = () => {
-    const {catFact} = useGlobalContext();
+    
     
     /* console.log(catFact) */
     
@@ -122,9 +122,7 @@ const About = () => {
                 <div className="at-home" id='home'>
                     <h1 className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 't', ' ', 'H', 'o', 'm', 'e']} idx={15} /> </h1>
 
-                    <div className='cat-fact'>
-                        <h1>{catFact.length && catFact[0].text}</h1>
-                    </div>
+                    
                     <div className="about-card-body">
                         <AboutCards />
                     </div>

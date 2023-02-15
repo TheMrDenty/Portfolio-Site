@@ -63,11 +63,11 @@ function Cards() {
         <div className='about-card-groups'>
             {aboutTopics.map((topic, idx) => {
                 const {content} = topic
-                console.log(content, idx);
+                /* console.log(content, idx); */
                 // first index gets active status
                 if (idx === 0) {
                     return (
-                        <div className='about-card-group' data-index={idx} data-status='active'>
+                        <div key={idx} className='about-card-group' data-index={idx} data-status='active'>
                             {content.map((topic, idx) => {
                                 const {petName, img} = topic;
                                 /* console.log(img, petName); */
@@ -83,7 +83,7 @@ function Cards() {
                                     )
                                 } else if (idx % 2 !== 0) {
                                     return (
-                                        <div className="big-about-card about-card">
+                                        <div key={idx} className="big-about-card about-card">
                                             <h1>{petName}</h1>
                                             <img src={img} alt={petName} />
                                         </div>

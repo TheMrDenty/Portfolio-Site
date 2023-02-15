@@ -30,7 +30,7 @@ function ProjectsNav() {
       <div className="project-cards-container">
         <div id="project-cards">
           {projects.map((project, idx) => {
-             const {name, img, id} = project;
+             const {name, img} = project;
              
               /* console.log(project); */
               return (

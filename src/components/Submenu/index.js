@@ -5,7 +5,7 @@ import { useGlobalContext } from '../../context';
 
 function Submenu() {
 
-    const {isSubmenuOpen, location, page:{page, links}} = useGlobalContext();
+    const {isSubmenuOpen, location, page:{links}} = useGlobalContext();
     /* console.log(page); */
     const container = useRef(null);
     const [columns, setColumns] = useState('col-2');

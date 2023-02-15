@@ -1,7 +1,7 @@
 import { FaCreditCard, FaBook, FaBriefcase } from 'react-icons/fa';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
 import JamieTaberPlaistedResume from '../data/JamieTaberPlaistedResume.pdf'
 
 const sublinks = [

@@ -43,9 +43,9 @@ function Project() {
                 <AnimatedLetters letterClass={letterClass} strArray={learnedArray} idx={3} />
               </h1>
               <ul>{learned.map((item, index) => {
-                console.log(item.item, index);
+                /* console.log(item.item, index); */
                 return (
-                  <li>{item.item}</li>
+                  <li key={index}>{item.item}</li>
                 )
               })}</ul>
             </div>

@@ -35,7 +35,7 @@ const Projects = () => {
     } 
     
     
-    console.log(joke[currentJoke])
+    /* console.log(joke[currentJoke]) */
     return (
         <>        
             <div className='projects-page'>
