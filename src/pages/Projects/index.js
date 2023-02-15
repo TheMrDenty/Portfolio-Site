@@ -23,7 +23,7 @@ const Projects = () => {
           setLetterClass('text-animate-hover')
         }, 4000)
         handleSetJoke();
-      }, [])
+      }, [handleSetJoke])
 
     const handleShow = () => {
         setShow(true);
