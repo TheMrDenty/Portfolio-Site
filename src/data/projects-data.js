@@ -14,7 +14,7 @@ const projects = [
             { item: '- Work with react routers, context, and state'},
             { item: '- Work with data being pulled from an API'},
             { item: '- Structuring and mapping data that I make'},
-            { item: '- Work with libraries such as leaflet, loaders, emailjs, github calender, gsap, and animate'},
+            { item: '- Work with libraries such as leaflet, loaders, emailjs, github calender, and animate'},
             { item: '- Using grid, psuedo elements,  in a effective way'},
             { item: '- Making, using, and styling svgs'},
 

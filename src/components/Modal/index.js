@@ -5,6 +5,7 @@ import { FaTimes } from 'react-icons/fa'
 import { useGlobalContext } from '../../context'
 import sublinks from '../../data/sublinks-data'
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Modal() {
 
@@ -28,7 +29,7 @@ function Modal() {
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
-                                        <a key={index} href={url}>{icon}{label}</a>
+                                        <HashLink key={index} onClick={closeModal} className='link-text' to={url}><p>{icon}{label}</p></HashLink>
                                     )
                                 })}
                             </div>

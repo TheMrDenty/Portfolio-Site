@@ -1,13 +1,44 @@
 # Portfolio-Site
 
-cat facts api
-https://cat-fact.herokuapp.com
+https://jamietp.com/
 
-random jokes api
+# Installation
+
+download code from my github and unzip the file into desired location
+https://github.com/TheMrDenty/Portfolio-Site
+
+run 'npm install && npm start' to install all the packages and libraries and to start the local server
+
+# Technologies used
+
+-- emailjs api --
+https://www.emailjs.com/
+used to send emails using user input on contact page
+
+-- random jokes api --
 https://github.com/15Dkatz/official_joke_api
+api that contains a huge list of jokes. used for joke section in projects
 
-github calender library
+-- github calender library --
 https://grubersjoe.github.io/react-github-calendar/
+used to display github commit calender in projects page
+
+-- fortawesome --
+https://fortawesome.com/
+used for svg icons around the site
+
+-- animate --
+https://animate.style/
+used for cube antimation on about page and in other places
+
+-- sass --
+https://sass-lang.com/
+used with animatedLetters component's style and in other styling
+
+-- react-router-hash-link --
+used for navigation to specific spots on a page
+
+-- loaders
 
 --App.js--
 
@@ -15,17 +46,20 @@ https://grubersjoe.github.io/react-github-calendar/
 
 --context.js--
 
-- Holds the apps context and API calls
-
---data.js--
-
-- Holds the apps subLinks data
+- Holds the apps global variables, functions and API calls
 
 --index.js--
 
 - wraps the apps router and context provider around the app
 
 ==components==
+
+--AboutCards--
+
+- imports aboutTopics from about data
+- uses handle click functions to cycle through the cards
+- returns a div that holds groups of cards per topic thats mapped out from the aboutTopics data. each group of cards maps out a card for each stored object in each topic. inner if statement takes every other card and assigns it either as a little card or a big card. outer if statement checks if the topic is the firsts idx and if it is sets it as active.
+- returns left and right buttons to cycle through each card group
 
 --AnimatedLetters--
 
@@ -44,8 +78,8 @@ https://grubersjoe.github.io/react-github-calendar/
 
 --Footer--
 
-- imports sublinks data, Link, and fort awesome icons.
-- returns a div that maps out sublinks and returns a div that sets page specific classNames and holds a Link to that iterations page and maps out links array that returns each iterations link
+- imports sublinks data, Link, HashLink, and fort awesome icons.
+- returns a div that maps out sublinks and returns a div that sets page specific classNames and holds a Link to that iterations page and maps out links array that returns each iterations HashLink which directs it to a specific part of a page
 - returns a ul with two anchor links, one to Linkedin one to GitHub.
 
 --Layout--
@@ -59,7 +93,7 @@ https://grubersjoe.github.io/react-github-calendar/
 - uses useGlobalContext to bring in isModalOpen state and the closeModal function.
 - returns an aside with a class that uses jsx to check if isModalOpen and if true sets class to show.
 - returns a button that uses the Close modal function onClick.
-- returns a div that maps the sublinks data and returns an article that maps the links array that was destructured from sublinks onto anchors that surround the icon and label data that was destructured from links.
+- returns a div that maps the sublinks data and returns an article that maps the links array that was destructured from sublinks onto HashLinks that surround the p tag holding the icon and label data that was destructured from links.
 
 --Navbar--
 
@@ -82,7 +116,7 @@ https://grubersjoe.github.io/react-github-calendar/
 - sets container to null useRef.
 - sets columns state as 'col-2' by default.
 - uses useEffect to setColumns based off of links length and gets positional data of the sublink and its container whenever location or links state is updated.
-- returns a aside which its className uses jsx to check if submenu state is set to true and applies a show class to it if it is. then displays a div with the className of the columns state which lets the component know how many sublinks to prepare for. then maps out links array as anchor tags.
+- returns a aside which its className uses jsx to check if submenu state is set to true and applies a show class to it if it is. then displays a div with the className of the columns state which lets the component know how many sublinks to prepare for. then maps out links array as HashLinks.
 
 ==data==
 
