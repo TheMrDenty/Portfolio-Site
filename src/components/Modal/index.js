@@ -28,7 +28,7 @@ function Modal() {
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
-                                        <p key={index}><a  href={url}>{icon}{label}</a></p>
+                                        <a key={index} href={url}>{icon}{label}</a>
                                     )
                                 })}
                             </div>
