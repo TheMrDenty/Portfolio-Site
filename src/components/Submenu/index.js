@@ -2,6 +2,7 @@ import './styles.scss';
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useGlobalContext } from '../../context';
+import { HashLink } from 'react-router-hash-link';
 
 function Submenu() {
 
@@ -37,7 +38,7 @@ function Submenu() {
                   const {label, icon, url} = link;
                   
                   return (
-                      <a key={index} href={url}>{icon}{label}</a>
+                      <HashLink className='link-text'  key={index} to={url}><p>{icon}{label}</p></HashLink>
                   )
               })}
           </div>

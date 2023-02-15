@@ -52,16 +52,23 @@
   .submenu h4 {
     margin-bottom: 1.5rem;
   }
-  .submenu-center a {
+  .submenu-center p {
     width: 10rem;
     display: block;
-    color: var(--clr-grey-1);
+    
     text-transform: capitalize;
     display: flex;
     align-items: center;
   }
   .submenu-center svg {
-    color: var(--clr-grey-5);
+    color: var(--clr-black);
+    filter: drop-shadow(var(--halo-yellow));
+   
+    font-family: var(--font-secondary);
     margin-right: 1rem;
+  }
+  .submenu .link-text p{
+    color: var(--clr-black);
+    text-shadow: var(--halo-yellow);
   }
   
