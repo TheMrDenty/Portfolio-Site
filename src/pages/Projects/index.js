@@ -25,11 +25,13 @@ const Projects = () => {
         
       }, [])
 
+    const handleSetJoke = () => {
+        setShow(false)
+        setCurrentJoke(getRandomInt(10))
+    } 
+
     useEffect(() => {
-        const handleSetJoke = () => {
-            setShow(false)
-            setCurrentJoke(getRandomInt(10))
-        } 
+        
         handleSetJoke();
     }, [])
 
