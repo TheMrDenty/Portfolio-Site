@@ -21,8 +21,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 8px;  
-    max-width: 916px;
-    width: calc(100% - 20px);
+    justify-content: center;
 }
 // changes opacity for all divs borders within glows radius
 #project-cards:hover > .project-in-the-way > .project-card > .project-card-border {
@@ -118,3 +117,21 @@
     opacity: .5;
 }
 
+@media screen and (max-width: 501px) {
+    
+.project-cards-container {
+    
+    height: 80rem;
+    
+}
+}
+
+@media screen and (max-width: 1000px) {
+    .project-card {
+        
+        height: 200px;
+        
+        width: 240px;
+        
+    }
+}

@@ -6,6 +6,8 @@ import ProjectsNav from '../../components/ProjectsNav';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../../components/AnimatedLetters';
 import Loader from 'react-loaders';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 const Projects = () => {
@@ -49,9 +51,12 @@ const Projects = () => {
                         <AnimatedLetters letterClass={letterClass} strArray={gitArray} idx={9} />
                     </h1>
                     <div className="git-calender">
-                        <GitHubCalendar username="themrdenty" year='last' showWeekdayLabels color={'#ffdf8e'}/>
+                        <GitHubCalendar username="themrdenty" year='last' className='calender' showWeekdayLabels color={'#ffdf8e'}/>
                     </div>
-                    
+                    <a target='_blank' rel='noreferrer' href='https://github.com/TheMrDenty'>
+                        <FontAwesomeIcon icon={faGithub} className='FAIcon' />
+                        <p>Github</p>
+                    </a>
                 </div>
 
                 <div className='joke' >

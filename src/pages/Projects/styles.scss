@@ -19,6 +19,23 @@
 
 .github {
     color: var(--clr-secondary-2);
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.github a {
+    color: var(--clr-white);
+    text-shadow: var(--halo-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.github p {
+    padding-left: .5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: .05rem;
 }
 
 .joke {
@@ -43,6 +60,7 @@
    
     cursor: pointer;
   }
+
 
 
 
