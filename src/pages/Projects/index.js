@@ -22,8 +22,12 @@ const Projects = () => {
         setTimeout(() => {
           setLetterClass('text-animate-hover')
         }, 4000)
+        
+      }, [])
+
+    useEffect(() => {
         handleSetJoke();
-      }, [handleSetJoke])
+    }, [handleSetJoke])
 
     const handleShow = () => {
         setShow(true);
