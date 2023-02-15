@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser'
 import './styles.scss'
 
 function EmailForm() {
-
+   
     const [letterClass, setLetterClass] = useState('text-animate');
 
 

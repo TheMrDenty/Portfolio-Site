@@ -34,7 +34,7 @@ function Home() {
                   <article className='hero-info'>
                     <img src={headshot} className='hero-img' alt='jamie' />
 
-                    <div>
+                    <div className='my-name'>
                       <h1 className='highlight'>
                         <AnimatedLetters letterClass={letterClass} strArray={welcomeArray} idx={1} />
                         <br /> 

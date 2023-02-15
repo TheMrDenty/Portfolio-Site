@@ -1,4 +1,3 @@
-
 .home-page {
     height: 10rem;
     display: grid;
@@ -40,6 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
     background-color: rgba(0, 0, 0, 0.451);
     border-radius: 10rem;
 }
@@ -75,5 +75,71 @@
 .contact-me .text-animate-hover {
     margin: -.5px;
     
+}
+
+@media screen and (min-width: 500px) {
+    .hero-info {
+        padding: 2rem 1rem 0 1rem;
+    }
+    
+    .hero-center {
+        width: 95%;
+        
+    }
+
+    .my-name h1{
+        font-size: 2rem;
+    }
+    
+    .hero-img {
+        height: 10rem;
+        
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .hero-info {
+        padding: 2rem 2rem 0 2rem;
+    }
+    
+    .hero-center {
+        width: 90%;
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+
+    .my-name h1{
+        font-size: 2rem;
+    }
+    
+    .hero-img {
+        height: 10rem;
+        
+    }
+    
+}
+
+@media screen and (min-width: 950px) {
+    .hero-info {
+        padding: 2rem 5rem 0 5rem;
+    }
+    
+    .hero-center {
+        width: 100%;
+        
+    }
+    .my-name h1{
+        font-size: 4rem;
+    }
+    .hero-img {
+        height: 15rem;
+        
+    }
 }
 

@@ -172,7 +172,7 @@
     grid-column-start: 1;
     grid-column-end: 4;
     align-self: center;
-    justify-self: center;
+    
     text-align: center;
 }
 
@@ -203,4 +203,56 @@
 svg {
     color: white;
     filter: drop-shadow(var(--halo-yellow));
+}
+
+@media screen and (min-width: 500px) {
+    .about {
+        margin: auto 2.5rem;
+        height: 55rem;
+    }
+    .cubespinner {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .about {
+        margin: auto 2.5rem;
+        height: 45rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about {
+        margin: auto 4rem;
+        height: 50rem;
+    }
+
+    .at-home {
+        height: 70rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 1055px) {
+    
+    
+    .about {
+        margin: auto 5rem;
+        height: 40rem;
+    }
+    
+   
+    .cubespinner {
+        margin-left: calc(54% - 100px);
+    }
+    
+    
+    
+    .at-home {
+        height: 60rem;
+    }
+    
+   
 }

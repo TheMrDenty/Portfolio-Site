@@ -150,3 +150,136 @@
     filter: drop-shadow(var(--halo-yellow));
 }
 
+@media screen and (min-width: 500px) {
+
+    .about-card-groups,
+    .about-card-group,
+    .big-about-card {
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .about-card {
+        width: 8rem;
+        height: 12rem;
+    }
+    
+    .big-about-card {
+        width: 8rem;
+        height: 12rem;        
+    }
+    
+    
+    .little-about-card {
+        width: 5rem;
+        height: 7rem;
+        margin-top: 5rem;
+    }
+
+    // little cards hover
+    .about-card-group:hover > .little-about-card:nth-child(1) {
+        transform: translate(100%, -140%) rotate(19deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(3) {
+        transform: translate(110%, 130%) rotate(15deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(5) {
+        transform: translate(-200%, -139%) rotate(-15deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(7) {
+        transform: translate(-210%, 120%) rotate(-20deg);
+    }
+}
+
+@media screen and (min-width: 650px) {
+
+    .about-card-groups,
+    .about-card-group,
+    .big-about-card {
+        width: 10rem;
+        height: 13.5rem;
+    }
+
+    .about-card {
+        width: 10rem;
+        height: 13.5rem;
+    }
+    
+    .big-about-card {
+        width: 10rem;
+        height: 13.5rem;      
+    }
+    
+    
+    .little-about-card {
+        width: 6rem;
+        height: 8rem;
+        margin-top: 5rem;
+    }
+
+    // little cards hover
+    .about-card-group:hover > .little-about-card:nth-child(1) {
+        transform: translate(100%, -130%) rotate(19deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(3) {
+        transform: translate(110%, 130%) rotate(15deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(5) {
+        transform: translate(-200%, -139%) rotate(-15deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(7) {
+        transform: translate(-210%, 120%) rotate(-20deg);
+    }
+}   
+
+@media screen and (min-width: 800px) {
+    .about-card-groups,
+    .about-card-group,
+    .big-about-card {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .about-card {
+        width: 15rem;
+        height: 20rem;
+    }
+    
+    .big-about-card {
+        width: 15rem;
+        height: 20rem;
+    }
+    
+    .big-about-card h1 {
+        width: 100%;
+    }
+    
+    .little-about-card {
+        width: 7rem;
+        height: 9rem;
+        margin-top: 10rem;
+    }
+
+        // little cards hover
+    .about-card-group:hover > .little-about-card:nth-child(1) {
+        transform: translate(200%, -150%) rotate(19deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(3) {
+        transform: translate(160%, 150%) rotate(15deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(5) {
+        transform: translate(-200%, -160%) rotate(-15deg);
+    }
+
+    .about-card-group:hover > .little-about-card:nth-child(7) {
+        transform: translate(-280%, 140%) rotate(-20deg);
+    }
+}
