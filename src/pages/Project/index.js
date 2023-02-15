@@ -40,7 +40,7 @@ function Project() {
  
             <div className="project-section">
               <h1 className='highlight'>
-                <AnimatedLetters letterClass={letterClass} strArray={learnedArray} idx={1} />
+                <AnimatedLetters letterClass={letterClass} strArray={learnedArray} idx={3} />
               </h1>
               <ul>{learned.map((item, index) => {
                 console.log(item.item, index);
@@ -52,7 +52,7 @@ function Project() {
 
             <div className="project-section">
               <h1 className='highlight'>
-                <AnimatedLetters letterClass={letterClass} strArray={nextTimeArray} idx={1} />
+                <AnimatedLetters letterClass={letterClass} strArray={nextTimeArray} idx={9} />
               </h1>
               <p>{nextTime}</p>
             </div>

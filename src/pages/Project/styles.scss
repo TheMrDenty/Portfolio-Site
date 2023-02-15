@@ -32,3 +32,10 @@
     display: inline;
     padding: 0 0;
 }
+
+@media screen and (max-width: 625px) {
+    .highlight {
+        font-size: 2rem;
+        
+    }
+}

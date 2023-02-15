@@ -51,6 +51,9 @@
     width: 100%;
     font-size: 1.5rem;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.659);
+    padding: .5rem 0;
+    border-radius: 1.2rem;
 }
 
 .little-about-card {
@@ -70,6 +73,9 @@
     width: 100%;
     font-size: 1rem;
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.659);
+    padding: .5rem 0;
+    border-radius: 1.2rem;
 }
 
 .about-card img {
@@ -169,11 +175,21 @@
         height: 12rem;        
     }
     
+    .big-about-card h1 {
+       
+        font-size: 1rem;
+    }
     
     .little-about-card {
         width: 5rem;
         height: 7rem;
         margin-top: 5rem;
+    }
+
+    .little-about-card h1 {
+        
+        font-size: .6rem;
+        
     }
 
     // little cards hover
@@ -212,12 +228,23 @@
         width: 10rem;
         height: 13.5rem;      
     }
+
+    .big-about-card h1 {
+       
+        font-size: 1rem;
+    }
     
     
     .little-about-card {
         width: 6rem;
         height: 8rem;
         margin-top: 5rem;
+    }
+
+    .little-about-card h1 {
+        
+        font-size: .8rem;
+        
     }
 
     // little cards hover
@@ -258,6 +285,7 @@
     
     .big-about-card h1 {
         width: 100%;
+        font-size: 1.5rem;
     }
     
     .little-about-card {
@@ -265,6 +293,14 @@
         height: 9rem;
         margin-top: 10rem;
     }
+
+    .little-about-card h1 {
+        
+        font-size: 1rem;
+        
+    }
+    
+    
 
         // little cards hover
     .about-card-group:hover > .little-about-card:nth-child(1) {
