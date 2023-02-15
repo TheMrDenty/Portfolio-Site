@@ -33,7 +33,7 @@ const Projects = () => {
     useEffect(() => {
         
         handleSetJoke();
-    }, [])
+    }, [show])
 
     
 
