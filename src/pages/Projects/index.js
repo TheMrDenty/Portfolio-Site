@@ -13,7 +13,7 @@ import { useCallback } from 'react';
 
 const Projects = () => {
     const {joke, getRandomInt} = useGlobalContext();
-    const [currentJoke, setCurrentJoke] = useState();
+    const [currentJoke, setCurrentJoke] = useState(1);
     const [show, setShow] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate')
     const projectsArray = ['P', 'r', 'o', 'j', 'e', 'c', "t'", 's']
@@ -31,10 +31,7 @@ const Projects = () => {
         setCurrentJoke(getRandomInt(10))
     }, [getRandomInt])
 
-    useEffect(() => {
-        
-        handleSetJoke();
-    }, [handleSetJoke])
+   
 
     
 

@@ -41,7 +41,31 @@ export const AppProvider = ({children}) => {
     // should I move my API's to their own component and import them that way?
 
     /* API */
+    /* --CAT FACTS-- */
+    //state to hold movie data
+    const [catFact, setCatFact] = useState([]);
+  
+    //function to get movies
+    const getCatFact = async () => {
+        // make fetch request and store response
+        try {
+            const response = await fetch(
+                `https://cat-fact.herokuapp.com/facts`
+            );
+            // parse JSON response into js object
+            const data = await response.json();
+            // sets Movie state to the selected movie
+            /* console.log('hey', data[0]); */
+            setCatFact(data);
+            
+        } catch(e){
+            console.error(e);
+        }
+    }
     
+    useEffect(() => {
+        getCatFact();
+    }, []);
 
     /* --JOKES-- */
     //state to hold movie data
@@ -82,7 +106,7 @@ export const AppProvider = ({children}) => {
     
     return <AppContext.Provider value={{
         isSubmenuOpen, isModalOpen, openSubmenu, openModal, closeSubmenu, closeModal, location, page,
-        joke, getRandomInt, 
+        catFact, joke, getRandomInt, 
     }}>
         {children}
     </AppContext.Provider>
