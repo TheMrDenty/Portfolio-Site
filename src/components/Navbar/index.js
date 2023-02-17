@@ -12,7 +12,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 function Navbar() {
-    const {openModal, openSubmenu, closeSubmenu} = useGlobalContext();
+    const {openNavModal, openSubmenu, closeSubmenu} = useGlobalContext();
 
     
 
@@ -44,7 +44,7 @@ function Navbar() {
                     <Link className='logo' to='/'>
                         <h1 className='highlight'>Jamie T.P.</h1>
                     </Link>
-                    <button className='btn toggle-btn' onClick={openModal}>
+                    <button className='btn toggle-btn' onClick={openNavModal}>
                         <FaBars />
                     </button>
                 </div>

@@ -34,8 +34,10 @@
 .about-card {
     width: 15rem;
     height: 20rem;
-    
+    display: flex;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.5);
+    padding: .1rem;
     position: absolute;
     transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
 }
@@ -44,14 +46,17 @@
     width: 15rem;
     height: 20rem;
     border-radius: 1.2rem;
-    
+    position: absolute;
 }
 
 .big-about-card h1 {
-    width: 100%;
+    position: absolute;
+    top: 0;
+    width: 14.8rem;
     font-size: 1.5rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.659);
+    margin: .1rem .1rem .1rem .1rem;
     padding: .5rem 0;
     border-radius: 1.2rem;
 }
@@ -70,10 +75,13 @@
 }
 
 .little-about-card h1 {
-    width: 100%;
-    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    width: 6.8rem;
+    font-size: 1.5rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.659);
+    margin: .1rem .1rem .1rem .1rem;
     padding: .5rem 0;
     border-radius: 1.2rem;
 }
@@ -176,7 +184,7 @@
     }
     
     .big-about-card h1 {
-       
+        width: 7.8rem;
         font-size: 1rem;
     }
     
@@ -187,7 +195,7 @@
     }
 
     .little-about-card h1 {
-        
+        width: 4.8rem;
         font-size: .6rem;
         
     }
@@ -230,7 +238,7 @@
     }
 
     .big-about-card h1 {
-       
+        width: 9.8rem;
         font-size: 1rem;
     }
     
@@ -242,7 +250,7 @@
     }
 
     .little-about-card h1 {
-        
+        width: 5.8rem;
         font-size: .8rem;
         
     }
@@ -284,7 +292,7 @@
     }
     
     .big-about-card h1 {
-        width: 100%;
+        width: 14.8rem;
         font-size: 1.5rem;
     }
     
@@ -295,7 +303,7 @@
     }
 
     .little-about-card h1 {
-        
+        width: 6.8rem;
         font-size: 1rem;
         
     }

@@ -7,29 +7,29 @@ import sublinks from '../../data/sublinks-data'
 import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-function Modal() {
+function NavModal() {
 
-    const {isModalOpen, closeModal} = useGlobalContext();
+    const {isNavModalOpen, closeNavModal} = useGlobalContext();
 
   return (
-    <aside className={`${isModalOpen ? 'modal-wrapper show' : 'modal-wrapper'}`}>
-        <div className='modal'>
-            <button className='close-btn' onClick={closeModal}>
+    <aside className={`${isNavModalOpen ? 'nav-modal-wrapper show' : 'nav-modal-wrapper'}`}>
+        <div className='nav-modal'>
+            <button className='close-btn' onClick={closeNavModal}>
                 <FaTimes />
             </button>
-            <div className='modal-links'>
+            <div className='nav-modal-links'>
                 {sublinks.map((item, index) => {
                     const {links, page} = item;
                     return (
                         <article key={index}>
-                            <NavLink exact='true' to={page[1]} onClick={closeModal}>
+                            <NavLink exact='true' to={page[1]} onClick={closeNavModal}>
                                 <h4>{page[0]}</h4>
                             </NavLink>
-                            <div className='modal-sublinks'>
+                            <div className='nav-modal-sublinks'>
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (
-                                        <HashLink key={index} onClick={closeModal} className='link-text' to={url}><p>{icon}{label}</p></HashLink>
+                                        <HashLink key={index} onClick={closeNavModal} className='link-text' to={url}><p>{icon}{label}</p></HashLink>
                                     )
                                 })}
                             </div>
@@ -42,4 +42,4 @@ function Modal() {
   )
 }
 
-export default Modal
+export default NavModal

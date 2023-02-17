@@ -20,7 +20,7 @@ const Footer = () => {
                             <Link to={page[1]} >
                                 <h4>{page[0]}</h4>
                             </Link>
-                            <div className='modal-sublinks'>
+                            <div className='nav-modal-sublinks'>
                                 {links.map((link, index) => {
                                     const {url, icon, label} = link;
                                     return (

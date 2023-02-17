@@ -2,7 +2,7 @@ import './styles.scss';
 
 import React from 'react'
 import Navbar from '../Navbar/index';
-import Modal from '../Modal/index';
+import NavModal from '../NavModal/index';
 
 import Submenu from '../Submenu/index';
 import { Outlet } from 'react-router-dom';
@@ -18,7 +18,7 @@ function Layout() {
     <div className='container'>
 
       <Navbar /> 
-      <Modal />
+      <NavModal />
       <Submenu />
       
       <Outlet />

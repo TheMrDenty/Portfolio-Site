@@ -41,7 +41,7 @@ const About = () => {
 
                 <div id='bio' className="about">
 
-                    <h1  className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']} idx={1} /> </h1>
+                    <h1  className='highlight'> <AnimatedLetters letterClass={letterClass} strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e',]} idx={1} /> </h1>
 
                     <p >
                         I am a Junior Web Developer with a passion for bringing my ideas to life through code. I have a strong understanding 

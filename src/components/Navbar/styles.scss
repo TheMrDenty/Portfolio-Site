@@ -37,6 +37,7 @@
 }
 
 .nav-header {
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -87,6 +88,9 @@
     grid-template-columns: auto 1fr auto;
     align-items: center;
     margin-top: -7rem;
+  }
+  .nav-header {
+    padding: 0 0;
   }
   .toggle-btn {
     display: none;

@@ -1,5 +1,5 @@
 /* sidebar */
-.modal-wrapper {
+.nav-modal-wrapper {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,12 +14,12 @@
     background: rgba(0, 0, 0, 0.5);
     
   }
-  .modal-wrapper.show {
+  .nav-modal-wrapper.show {
     visibility: visible;
     z-index: 11;
     transform: scale(1);
   }
-  .modal {
+  .nav-modal {
     width: 90vw;
     height: 95vh;
     max-width: var(--fixed-width);
@@ -40,31 +40,31 @@
     right: 1rem;
     cursor: pointer;
   }
-  .modal article {
+  .nav-modal article {
     margin-bottom: 2rem;
     
     
   }
-  .modal-sublinks {
+  .nav-modal-sublinks {
     display: inline-block;
     
     row-gap: 0.25rem;
     padding: 0 0 .5rem;
   }
-  .modal-sublinks a {
+  .nav-modal-sublinks a {
     
     
     text-transform: capitalize;
     padding: 0 1rem;
     align-items: center;
   }
-  .modal-sublinks svg {
+  .nav-modal-sublinks svg {
     color: var(--clr-grey-5);
     margin-right: 1rem;
   }
   
   @media screen and (min-width: 900px) {
-    .modal-wrapper {
+    .nav-modal-wrapper {
       display: none;
     }
   }

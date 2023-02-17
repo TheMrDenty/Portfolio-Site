@@ -16,8 +16,8 @@ const Projects = () => {
     const [currentJoke, setCurrentJoke] = useState(1);
     const [show, setShow] = useState(false);
     const [letterClass, setLetterClass] = useState('text-animate')
-    const projectsArray = ['P', 'r', 'o', 'j', 'e', 'c', "t'", 's']
-    const gitArray = ['C', 'o', 'm', 'm', 'i', "t'", "s"]
+    const projectsArray = ['P', 'r', 'o', 'j', 'e', 'c', "t", 's']
+    const gitArray = ['C', 'o', 'm', 'm', 'i', "t", "s"]
 
     useEffect(() => {
         setTimeout(() => {

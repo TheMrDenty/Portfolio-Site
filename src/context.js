@@ -10,14 +10,14 @@ export const AppProvider = ({children}) => {
     
     /* SIDEBAR */
 
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isNavModalOpen, setIsNavModalOpen] = useState(false);
 
-    const openModal = () => {
-        setIsModalOpen(true);
+    const openNavModal = () => {
+        setIsNavModalOpen(true);
     }
 
-    const closeModal = () => {
-        setIsModalOpen(false);
+    const closeNavModal = () => {
+        setIsNavModalOpen(false);
     }
 
     /* SUBMENU */
@@ -105,7 +105,7 @@ export const AppProvider = ({children}) => {
 
     
     return <AppContext.Provider value={{
-        isSubmenuOpen, isModalOpen, openSubmenu, openModal, closeSubmenu, closeModal, location, page,
+        isSubmenuOpen, isNavModalOpen, openSubmenu, openNavModal, closeSubmenu, closeNavModal, location, page,
         catFact, joke, getRandomInt, 
     }}>
         {children}
