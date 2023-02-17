@@ -87,12 +87,12 @@ used for navigation to specific spots on a page
 - imports and displays Navbar, Sidebar, and Submenu components.
 - imports outlet and displays routed component from the router (displays Home page by default).
 
---Modal--
+--NavModal--
 
 - is what pops up when screen size is too small for Navbar. must click three bars button to open-
-- uses useGlobalContext to bring in isModalOpen state and the closeModal function.
-- returns an aside with a class that uses jsx to check if isModalOpen and if true sets class to show.
-- returns a button that uses the Close modal function onClick.
+- uses useGlobalContext to bring in isNavModalOpen state and the closeNavModal function.
+- returns an aside with a class that uses jsx to check if isNavModalOpen and if true sets class to show.
+- returns a button that uses the Close NavModal function onClick.
 - returns a div that maps the sublinks data and returns an article that maps the links array that was destructured from sublinks onto HashLinks that surround the p tag holding the icon and label data that was destructured from links.
 
 --Navbar--

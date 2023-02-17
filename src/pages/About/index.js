@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Footer from '../../components/Footer/index';
 import { NavLink } from 'react-router-dom';
 import AboutCards from '../../components/AboutCards';
+import AboutCardsModal from '../../components/AboutCardsModal';
 
 
 
@@ -126,7 +127,10 @@ const About = () => {
                     <div className="about-card-body">
                         <AboutCards />
                     </div>
+                    <AboutCardsModal />
                 </div>
+
+                
                 
                 
                 <div className="footer">

@@ -8,7 +8,7 @@ export const AppProvider = ({children}) => {
     const [location, setLocation] = useState({});
     const [page, setPage] = useState({page:[''], links:[]});
     
-    /* SIDEBAR */
+    /* NavModal */
 
     const [isNavModalOpen, setIsNavModalOpen] = useState(false);
 
@@ -18,6 +18,17 @@ export const AppProvider = ({children}) => {
 
     const closeNavModal = () => {
         setIsNavModalOpen(false);
+    }
+
+    /* AboutCardsModal */
+    const [isAboutCardsModalOpen, setIsAboutCardsModalOpen] = useState(false);
+
+    const openAboutCardsModal = () => {
+        setIsAboutCardsModalOpen(true);
+    }
+
+    const closeAboutCardsModal = () => {
+        setIsAboutCardsModalOpen(false);
     }
 
     /* SUBMENU */
@@ -106,7 +117,7 @@ export const AppProvider = ({children}) => {
     
     return <AppContext.Provider value={{
         isSubmenuOpen, isNavModalOpen, openSubmenu, openNavModal, closeSubmenu, closeNavModal, location, page,
-        catFact, joke, getRandomInt, 
+        catFact, joke, getRandomInt, isAboutCardsModalOpen, openAboutCardsModal, closeAboutCardsModal
     }}>
         {children}
     </AppContext.Provider>

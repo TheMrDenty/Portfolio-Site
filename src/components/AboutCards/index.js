@@ -7,10 +7,12 @@ import aboutTopics from '../../data/about-data'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { useGlobalContext } from '../../context'
 
 
 
 function Cards() {
+    const {openAboutCardsModal} = useGlobalContext();
 
     let activeIndex = 0;
 
@@ -75,7 +77,7 @@ function Cards() {
                                 if (idx % 2 === 0) {
                                     /* console.log(idx); */
                                     return (
-                                            <div key={idx} className="little-about-card about-card">
+                                            <div onClick={openAboutCardsModal} key={idx} className="little-about-card about-card">
                                                 <h1>{name}</h1>
                                                 <img src={img} alt={name} />
                                                 
@@ -83,7 +85,7 @@ function Cards() {
                                     )
                                 } else if (idx % 2 !== 0) {
                                     return (
-                                        <div key={idx} className="big-about-card about-card">
+                                        <div onClick={openAboutCardsModal} key={idx} className="big-about-card about-card">
                                             <h1>{name}</h1>
                                             <img src={img} alt={name} />
                                         </div>
@@ -103,7 +105,7 @@ function Cards() {
                                 if (idx % 2 === 0) {
                                     /* console.log(idx); */
                                     return (
-                                            <div key={idx} className="little-about-card about-card">
+                                            <div onClick={openAboutCardsModal} key={idx} className="little-about-card about-card">
                                                 <h1>{name}</h1>
                                                 <img src={img} alt={name} />
                                                 
@@ -111,7 +113,7 @@ function Cards() {
                                     )
                                 } else if (idx % 2 !== 0) {
                                     return (
-                                        <div className="big-about-card about-card">
+                                        <div onClick={openAboutCardsModal} className="big-about-card about-card">
                                             <h1>{name}</h1>
                                             <img src={img} alt={name} />
                                         </div>
