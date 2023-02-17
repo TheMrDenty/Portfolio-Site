@@ -2,29 +2,35 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    
     z-index: 10;
+    
 }
 
 .nav {
     display: flex;
     padding-top: 2rem;
     justify-content: center;
-    background: transparent;
+    
     position: relative;
-    height: 12rem;
+    height: 15rem;
+    width: 100%;
+    top: 0;
     isolation: isolate;
     -webkit-mask-image: url('../../images/nav.svg');
     mask-image: url('../../images/nav.svg');
+    background-size: auto;
     background-image: linear-gradient(
         175deg, 
         rgba(203,178,113,1)0%, 
         var(--clr-black) 70%, 
-        
+      
     );
+    
 }
 
 .nav-center {
-    width: 90vw;
+    width: 60rem;
     max-width: var(--max-width);
     position: relative;
     z-index: -2;
@@ -111,3 +117,19 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .nav {
+    
+    -webkit-mask-image: url('../../images/ff-nav.svg');
+    mask-image: url('../../images/ff-nav.svg');
+    
+    background-image: linear-gradient(
+        180deg, 
+        rgba(203,178,113,1)0%, 
+        var(--clr-black) 100%, 
+      
+    );
+    
+}
+    
+}

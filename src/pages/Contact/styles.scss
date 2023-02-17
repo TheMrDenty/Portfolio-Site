@@ -93,3 +93,19 @@ p {
       display: none;
     }
   } */
+
+@-moz-document url-prefix() {
+  .info-map {
+    top: 28%;
+  }
+
+  .leaflet-container {
+    position: relative;
+    top: 8%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: backInRight 1s 1.2s;
+    animation-fill-mode: forwards;
+  }
+}

@@ -124,3 +124,45 @@ h4 {
         opacity: 0;
     }
 }
+
+@-moz-document url-prefix() {
+    .footer-container {
+        height: 100%;
+        margin-top: 13rem;
+        
+        
+        -webkit-mask-image: url('../../images/ff-nav.svg');
+        mask-image: url('../../images/ff-nav.svg');
+        
+        background-image: linear-gradient(
+            180deg, 
+            rgba(203,178,113,1)0%, 
+            var(--clr-black) 100%, 
+            
+        );
+      
+      
+    }
+
+    .about-footer {
+        
+        padding-top: 0;
+    }
+
+    .contact-footer {
+        padding-top: 0;
+        
+        
+    }  
+      
+    .links {
+        grid-area: 1 / 4 / 2 / 5;
+        padding-top: 4.5rem;
+        -webkit-transform: scaleX(-1) scaleY(-1);
+        transform: scaleX(-1) scaleY(-1);
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+  }
