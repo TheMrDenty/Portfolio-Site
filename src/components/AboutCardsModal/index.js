@@ -10,9 +10,9 @@ function AboutCardsModal() {
         <div className='about-cards-modal'>
             <button className='close-btn' onClick={closeAboutCardsModal}>
                 <FaTimes />
-                more to come in the future!
+                
             </button>
-            
+            more to come in the future!
         </div>
     </aside>
   )
