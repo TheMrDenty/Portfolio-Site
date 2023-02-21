@@ -127,7 +127,7 @@ const About = () => {
                     <div className="about-card-body">
                         <AboutCards />
                     </div>
-                    <AboutCardsModal />
+                    
                 </div>
 
                 

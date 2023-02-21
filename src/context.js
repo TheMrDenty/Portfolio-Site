@@ -4,9 +4,8 @@ import sublinks from "./data/sublinks-data";
 const AppContext = React.createContext();
 
 export const AppProvider = ({children}) => {
-
-    const [location, setLocation] = useState({});
-    const [page, setPage] = useState({page:[''], links:[]});
+    
+    
     
     /* NavModal */
 
@@ -22,6 +21,7 @@ export const AppProvider = ({children}) => {
 
     /* AboutCardsModal */
     const [isAboutCardsModalOpen, setIsAboutCardsModalOpen] = useState(false);
+    
 
     const openAboutCardsModal = () => {
         setIsAboutCardsModalOpen(true);
@@ -32,7 +32,8 @@ export const AppProvider = ({children}) => {
     }
 
     /* SUBMENU */
-
+    const [location, setLocation] = useState({});
+    const [page, setPage] = useState({page:[''], links:[]});
     const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
 
     const openSubmenu = (text, coordinates) => {
@@ -52,31 +53,6 @@ export const AppProvider = ({children}) => {
     // should I move my API's to their own component and import them that way?
 
     /* API */
-    /* --CAT FACTS-- */
-    //state to hold movie data
-    const [catFact, setCatFact] = useState([]);
-  
-    //function to get movies
-    const getCatFact = async () => {
-        // make fetch request and store response
-        try {
-            const response = await fetch(
-                `https://cat-fact.herokuapp.com/facts`
-            );
-            // parse JSON response into js object
-            const data = await response.json();
-            // sets Movie state to the selected movie
-            /* console.log('hey', data[0]); */
-            setCatFact(data);
-            
-        } catch(e){
-            console.error(e);
-        }
-    }
-    
-    useEffect(() => {
-        getCatFact();
-    }, []);
 
     /* --JOKES-- */
     //state to hold movie data
@@ -117,7 +93,7 @@ export const AppProvider = ({children}) => {
     
     return <AppContext.Provider value={{
         isSubmenuOpen, isNavModalOpen, openSubmenu, openNavModal, closeSubmenu, closeNavModal, location, page,
-        catFact, joke, getRandomInt, isAboutCardsModalOpen, openAboutCardsModal, closeAboutCardsModal
+         joke, getRandomInt, isAboutCardsModalOpen, openAboutCardsModal, closeAboutCardsModal
     }}>
         {children}
     </AppContext.Provider>

@@ -8,11 +8,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleArrowRight } from '@fortawesome/free-solid-svg-icons'
 import { faCircleArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { useGlobalContext } from '../../context'
+import AboutCardsModal from '../AboutCardsModal'
 
 
 
 function Cards() {
     const {openAboutCardsModal} = useGlobalContext();
+    
+
+    // left and right handling 
 
     let activeIndex = 0;
 
@@ -80,7 +84,6 @@ function Cards() {
                                             <div onClick={openAboutCardsModal} key={idx} className="little-about-card about-card">
                                                 <h1>{name}</h1>
                                                 <img src={img} alt={name} />
-                                                
                                             </div>
                                     )
                                 } else if (idx % 2 !== 0) {
@@ -97,7 +100,7 @@ function Cards() {
                     )
                 } else {
                     return (
-                        <div className='about-card-group' data-index={idx} data-status='unknown'>
+                        <div className='about-card-group' key={idx} data-index={idx} data-status='unknown'>
                             {content.map((topic, idx) => {
                                 const {name, img} = topic;
                                 /* console.log(img, petName); */
@@ -113,7 +116,7 @@ function Cards() {
                                     )
                                 } else if (idx % 2 !== 0) {
                                     return (
-                                        <div onClick={openAboutCardsModal} className="big-about-card about-card">
+                                        <div onClick={openAboutCardsModal}  key={idx} className="big-about-card about-card">
                                             <h1>{name}</h1>
                                             <img src={img} alt={name} />
                                         </div>
@@ -137,6 +140,7 @@ function Cards() {
             </button>
             
         </div>
+        <AboutCardsModal />
     </div>
   )
 }

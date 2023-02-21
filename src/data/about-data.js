@@ -26,6 +26,7 @@ import sublime from '../images/music-imgs/sublime.jpg'
 
 const aboutTopics = [
     {
+        
         content: [
             {   
                 id: 0,
