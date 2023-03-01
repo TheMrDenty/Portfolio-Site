@@ -196,3 +196,5 @@ used for navigation to specific spots on a page
 - set a hover affect on buttons as well as a active class on navlinks
 - add pop-out on home img.
 - find a way to line the hash links to the top of the desired link
+
+Thank you for visiting!
