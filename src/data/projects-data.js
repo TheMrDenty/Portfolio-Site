@@ -25,11 +25,14 @@ const projects = [
         id: 2,
         name: 'Save The Universe',
         img: `..${saveTheUniverse}`,
-        why: '',
+        why: 'This project was made as a final assignment for the JavaScript portion of a course I took through Per Scholas powered by TEKsystems. The project required me to code a game where the player and an enemy ship battle and if you destroy it you move on to the next ship until a set fleet size was defeated. The project was used to check if I was properly putting together what I learned in the class as well as properly using my available resources to solve any problems.',
         learned: [
-            {item: ''},
+            {item: '- How to use classes to make easily make multiple objects.'},
+            {item: '- How to manipulate the dom to easily update displayed information'},
+            {item: '- How to use an array of objects to store data that needs to be reused and changed out'},
+            {item: '- How to embed youtube videos into a webpage and have them autoplay starting at specific times'},
         ],
-        nextTime: '',
+        nextTime: 'If I were to go back and add anything to this project I would add a boss fight, a area where the player can upgrade and repair their ship, a score tracker and a way to play wave after wave until your ship is destroyed in order to earn a high score, a story mode, a few animations to match whats going on, and I would figure out how to properly loop the youtube video.',
     },
     {
         id: 3,
